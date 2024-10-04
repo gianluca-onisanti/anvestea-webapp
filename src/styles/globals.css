@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'anvestea';
+  src: url('../../public/fonts/QwitcherGrypen-Regular.ttf'), format('truetype');
+}
+
+@font-face {
+  font-family: 'anvestea-bold';
+  src: url('../../public/fonts/QwitcherGrypen-Bold.ttf'), format('truetype');
+}
+
+@font-face {
+  font-family: 'fredoka';
+  src: url('../../public/fonts/Fredoka-Regular.ttf'), format('truetype');
+}
