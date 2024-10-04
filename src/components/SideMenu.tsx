@@ -12,7 +12,7 @@ import ListItemDivider from './ListIemDivider';
 import { Box, Typography } from '@mui/material';
 
 
-const drawerWidth = 245;
+const drawerWidth = 265;
 
 const listItem = [
     { 
@@ -34,6 +34,7 @@ const SideMenu: React.FC = () => (
             width: drawerWidth,
             flexShrink: 0,
             '& .MuiDrawer-paper': {
+                backgroundColor: '#f1e7e7',
                 width: drawerWidth,
                 boxSizing: 'border-box',
             },
@@ -63,6 +64,8 @@ const SideMenu: React.FC = () => (
                         component={NavLink} 
                         to={item.route} 
                         sx={{
+                            color: '#1a0e0e',
+                            ml: '10px',
                             '&.active': {
                                 backgroundColor: 'lightgray'
                             }
@@ -71,7 +74,7 @@ const SideMenu: React.FC = () => (
                             <ListItemIcon>
                                 {item.icon}
                             </ListItemIcon>
-                            <ListItemText sx={{ml: '-5px'}} primary={(
+                            <ListItemText sx={{ height: 'auto', ml: '-10px'}} primary={(
                                 <Typography color='black' fontFamily='fredoka'>
                                     {item.label}
                                 </Typography>
