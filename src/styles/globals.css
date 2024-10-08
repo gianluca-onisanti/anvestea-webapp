@@ -1,3 +1,7 @@
+html {
+  cursor: url('../../public/pointer.png'), auto;
+}
+
 body {
   color: #f1e7e7;
   background-color: #1a0e0e;
@@ -27,4 +31,25 @@ code {
 @font-face {
   font-family: 'fredoka';
   src: url('../../public/fonts/Fredoka-Regular.ttf'), format('truetype');
+}
+
+.light {
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px; 
+  height: 0px; 
+  background-color: rgba(255, 255, 255, 0.10); 
+  border-radius: 100%;
+  pointer-events: none; 
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 50px 60px rgba(168, 85, 85, 0.20); /* Aumenta o blur */
+  mix-blend-mode: lighten; 
+}
+
+.content {
+  cursor: none;
+  position: relative; /* Para que a luz fique sobre o conteúdo */
+  z-index: 1; /* Garante que o conteúdo fique acima da luz */
 }
