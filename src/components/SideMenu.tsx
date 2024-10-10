@@ -7,7 +7,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import ListItemDivider from './ListIemDivider';
 import { Box, Typography } from '@mui/material';
 import pointer from '../styles/pointer.png'
@@ -15,15 +15,27 @@ import pointer from '../styles/pointer.png'
 const drawerWidth = 265
 
 const listItem = [
-    { 
-        label: 'Home',
+    {
+        label: 'Menu Principal',
         route: '/',
-        icon: <HomeIcon /> 
+        icon: <HomeIcon />,
+        subs: [
+            {
+                label: 'Home',
+                route: '/',
+            }
+        ]
     },
-    { 
-        label: 'Sobre',
-        route: '/sobre',
-        icon: <InfoIcon />
+    {
+        label: 'História',
+        route: '/historia',
+        icon: <InfoIcon />,
+        subs: [
+            {
+                label: 'Home',
+                route: '/',
+            }
+        ]
     }
 ]
 
@@ -40,6 +52,12 @@ const SideMenu: React.FC = () => {
                     backgroundColor: '#f1e7e7',
                     width: drawerWidth,
                     boxSizing: 'border-box',
+                    '&:active': {
+                        cursor: 'none',
+                    }
+                },
+                '&:active': {
+                    cursor: 'none',
                 }
             }}
             variant="persistent"
@@ -61,9 +79,9 @@ const SideMenu: React.FC = () => {
                     Anvestea's Accord
                 </Typography>
             </Box>
-            <List>
+            <List sx={{'&:active': { cursor: 'none' }}}>
                 {listItem.map((item: any, key: number) => (
-                    <>
+                    <React.Fragment key={key}>
                         <ListItemDivider />
                         <ListItem
                             key={key}
@@ -72,23 +90,37 @@ const SideMenu: React.FC = () => {
                             onClick={() => setClicked(key)}
                             to={item.route}
                             sx={{
+                                '&:active': { cursor: 'none' },
                                 color: clicked === key ? '#a3595c' : '#1a0e0e',
                                 backgroundColor: clicked === key ? '#1a0e0e' : null
                             }}>
-                            <ListItemButton sx={{'&:hover': { cursor: `url(${pointer}), pointer` }}}>
-                                <ListItemIcon>
-                                    <div style={{ marginTop: '5px', color: clicked === key ? '#a3595c' : '#1a0e0e' }}>
+                            <ListItemButton sx={{
+                                '&:active': { cursor: 'none' },
+                                '&:hover': { cursor: `url(${pointer}), pointer` },
+                            }}>
+                                <ListItemIcon sx={{'&:active': { cursor: 'none' }}}>
+                                    <div style={{ 
+                                        marginTop: '5px', 
+                                        color: clicked === key ? 
+                                            '#a3595c' : '#1a0e0e',
+                                        cursor: `inherit`    
+                                    }}>
                                         {item.icon}
                                     </div>
                                 </ListItemIcon>
-                                <ListItemText sx={{ height: 'auto', ml: '-10px' }} primary={(
-                                    <Typography fontFamily='fredoka'>
-                                        {item.label}
-                                    </Typography>
-                                )} />
+                                <ListItemText sx={{
+                                    '&:active': { cursor: 'none' },
+                                    height: 'auto',
+                                    ml: '-10px'
+                                }}
+                                    primary={(
+                                        <Typography sx={{'&:active': { cursor: 'none' }}} fontFamily='fredoka'>
+                                            {item.label}
+                                        </Typography>
+                                    )} />
                             </ListItemButton>
                         </ListItem>
-                    </>
+                    </React.Fragment>
                 ))}
                 <ListItemDivider />
             </List>

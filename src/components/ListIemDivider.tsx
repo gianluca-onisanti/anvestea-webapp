@@ -1,10 +1,10 @@
-import { Divider } from "@mui/material"
+import { Box, Divider } from "@mui/material"
 
 export const ListItemDivider = () => {
     return(
-        <div style={{display: 'flex', justifyContent: 'center'}}>
-        <Divider sx={{ width: '150px'}}/>
-    </div>
+        <Box sx={{ '&:active': {cursor: 'none'}, display: 'flex', justifyContent: 'center'}}>
+            <Divider sx={{ '&:active': {cursor: 'none'}, width: '150px'}}/>
+        </Box>
     )
 }
 

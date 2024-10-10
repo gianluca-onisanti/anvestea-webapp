@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
+import MenuPrincipal from './pages/01_menu-principal/MenuPrincipal';
+import Historia from './pages/02_historia/Historia';
 import SideMenu from './components/SideMenu';
 import { Box } from '@mui/material';
 
@@ -29,8 +29,8 @@ const App: React.FC = () => {
         <SideMenu />
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/sobre" element={<About />} />
+            <Route path="/" element={<MenuPrincipal />} />
+            <Route path="/historia" element={<Historia />} />
           </Routes>
         </Box>
       </Box>
