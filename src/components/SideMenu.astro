@@ -31,15 +31,16 @@ const { role = "dev | user", isOpen = false, links = []} = Astro.props;
     <aside class={`sidemenu ${isOpen ? "open" : ""}`}>
         <div class="header">
             <h2>Anvestea's Accord</h2>
+            <p>o Manual do RPG</p>
         </div>
         <nav>
             <ul>
                 {
                     links.map((link: any, e : number) => (
-                        <li>
-                            <a id={String(e)} href={link.href}>
+                        <li class={!link.icon ? 'pager-container' : null}>
+                            <a class={!link.icon ? 'pager' : null} id={String(e)} href={link.href}>
                                 <Icon name={link.icon} />
-                                {link.label}
+                                <span>{link.label}</span>
                             </a>
                         </li>
                     ))

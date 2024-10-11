@@ -3,9 +3,7 @@
 import Layout from "../../layouts/Layout.astro";
 import SideMenu from "../../components/SideMenu.astro";
 
-const pageTitle = 'Sessão de Devs - Básicos'
-
-let current = 0
+const pageTitle = 'Sessão de Devs - Relatórios Dinâmicos'
 
 ---
 
@@ -16,9 +14,11 @@ let current = 0
 
     // Aqui definimos o markdown dessa Sessão
     const markdownFiles = [
-        "./01_o-que-e-datasol", 
-        "./02_tecnologias-escolhidas",
-        "./03_autenticacao"
+        "./01_introducao", 
+        "./02_estrutura-dos-dados",
+        "./03_filtros-dinamicos",
+        "./04_painel-de-edicao",
+        "./05_responsaveis",
     ]
 
     // Verificar se o índice é válido
@@ -52,27 +52,35 @@ let current = 0
     links={[
         {
             href: "../",
-            icon: "arrow_back",
-            label: "Voltar ao Menu",
+            icon: null,
+            label: "Início / Sistema de Combate",
         },
         {
             href: "./?markdown=0",
             icon: "info",
-            label: "Básicos: O que é Datasol?",
+            label: "RDs: Introdução",
         },
         {
             href: "./?markdown=1",
-            icon: "emoji_objects",
-            label: "Básicos: Tecnologias Escolhidas",
+            icon: "storage",
+            label: "RDs: Estrutura dos dados",
         },
         {
             href: "./?markdown=2",
-            icon: "key",
-            label: "Básicos: Controle de Acesso",
+            icon: "filter_list",
+            label: "RDs: Filtros Dinâmicos",
+        },
+        {
+            href: "./?markdown=3",
+            icon: "edit_square",
+            label: "RDs: Painéis de Edição",
+        },
+        {
+            href: "./?markdown=4",
+            icon: "groups",
+            label: "RDs: Responsáveis",
         }
-    ]}
-    
-/>
+]}/>
 
 <Layout id="titulo" title={pageTitle}>
     <main style="max-width: 750px;">

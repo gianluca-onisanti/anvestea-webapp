@@ -15,7 +15,7 @@ const { id, title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{"Anvestea's Accord - " + title}</title>
 	</head>
 	<body>
 		<div id="container" onload="javascript:handler()">
@@ -40,23 +40,18 @@ const { id, title } = Astro.props;
 
 <style is:global>
 	@font-face {
-		font-family: "cassol";
-		src: url("/fonts/Gotham-Bold.otf") format("opentype");
+		font-family: "anvestea";
+		src: url("/fonts/anvestea.ttf") format("truetype");
 	}
 
 	@font-face {
-		font-family: "cassol-light";
-		src: url("/fonts/Gotham-Light.otf") format("opentype");
-	}
-
-	@font-face {
-		font-family: "cassol-book";
-		src: url("/fonts/GothamBook.ttf") format("truetype");
+		font-family: "blacksword";
+		src: url("/fonts/Blacksword.otf") format("opentype");
 	}
 
 	html {
 		font-family: system-ui, sans-serif;
-		background: rgb(19, 16, 1);
+		background: #150b0b;
 		scroll-behavior: smooth;
 	}
 
@@ -77,7 +72,7 @@ const { id, title } = Astro.props;
 		padding: 1rem;
 		width: 980px !important;
 		max-width: calc(100% - 2rem);
-		color: rgb(255, 255, 255);
+		color: #f1e7e7;
 		font-size: 20px;
 		line-height: 1.6;
 	}
@@ -101,8 +96,8 @@ const { id, title } = Astro.props;
 	}
 
 	.letter {
-		color: #f2aa00;
-		font-family: cassol;
+		color: #d8131a;
+		font-family: anvestea;
 	}
 
 	.instructions {
@@ -137,7 +132,7 @@ const { id, title } = Astro.props;
 	}
 
 	::-webkit-scrollbar-thumb {
-		background-color: #f2aa00;
+		background-color: #c51e23;
 		border-radius: 4px;
 		transition: background-color 0.3s ease;
 	}
@@ -187,9 +182,9 @@ const { id, title } = Astro.props;
 	}
 
 	.sidelist {
-		font-family: "cassol";
-		background: rgb(19, 16, 1);
-		color: #f2aa00;
+		font-family: "anvestea";
+		background: #150b0b;
+		color: #d8131a;
 		position: fixed;
 		width: 240px;
 		right: 0;
@@ -202,9 +197,9 @@ const { id, title } = Astro.props;
 		border-image: linear-gradient(
 				to bottom,
 				transparent 5%,
-				#f2aa0050 25%,
-				#f2aa00 50%,
-				#f2aa0050 75%,
+				#d8131a50 25%,
+				#d8131a 50%,
+				#d8131a50 75%,
 				transparent 95%
 			)
 			1;
@@ -218,7 +213,7 @@ const { id, title } = Astro.props;
 	}
 
 	.sidelist ul {
-		font-family: "cassol-light";
+		font-family: "anvestea";
 		list-style: none;
 		padding: 0;
 		margin-left: 20px;
@@ -249,7 +244,7 @@ const { id, title } = Astro.props;
 	}
 
 	a {
-		color: #f2aa00;
+		color: #d8131a;
 		text-decoration: none;
 		border-radius: 10px;
 		transition: all 0.5s ease-in-out;
@@ -260,9 +255,9 @@ const { id, title } = Astro.props;
 		background-image: linear-gradient(
 			to right,
 			transparent 5%,
-			#f2aa0025 25%,
-			#f2aa0050 50%,
-			#f2aa0025 75%,
+			#d8131a25 25%,
+			#d8131a50 50%,
+			#d8131a25 75%,
 			transparent 95%
 		);
 	}
@@ -271,9 +266,9 @@ const { id, title } = Astro.props;
 		background-image: linear-gradient(
 			to right,
 			transparent 5%,
-			#f2aa0025 25%,
-			#f2aa0050 50%,
-			#f2aa0025 75%,
+			#d8131a25 25%,
+			#d8131a50 50%,
+			#d8131a25 75%,
 			transparent 95%
 		);
 		background-size: 200% 100%;
@@ -293,8 +288,8 @@ const { id, title } = Astro.props;
 
 	div.code_box:hover pre {
 		transition: all 0.2s ease-in-out;
-		background-color: #f2aa0010;
-		color: #f2aa00 !important;
+		background-color: #d8131a10;
+		color: #d8131a !important;
 	}
 
 	.code_box {
@@ -311,8 +306,8 @@ const { id, title } = Astro.props;
 
 	.code_box:hover {
 		transition: all 0.2s ease-in-out;
-		background-color: #f2aa0010;
-		color: #f2aa00 !important;
+		background-color: #d8131a10;
+		color: #d8131a !important;
 	}
 
 	.image {
@@ -340,13 +335,13 @@ const { id, title } = Astro.props;
 		font-size: 18px;
 		width: fit-content;
 		border-radius: 30px;
-		background-color: #f2aa0010;
+		background-color: #d8131a10;
 		padding: 20px;
 	}
 
 	.note:hover {
 		transition: all 0.3s ease-in-out;
-		color: #f2aa00;
+		color: #d8131a;
 	}
 
 	.link {
@@ -365,12 +360,12 @@ const { id, title } = Astro.props;
 	}
 
 	.link:hover {
-		background-color: #f2aa0030;
+		background-color: #d8131a30;
 		transition: all 0.3s ease-in-out;
 	}
 
 	.sidemenu {
-		font-family: "cassol-light";
+		font-family: "anvestea";
 		font-weight: 800;
 		position: fixed;
 		left: 0;
@@ -385,30 +380,50 @@ const { id, title } = Astro.props;
 		border-image: linear-gradient(
 				to right,
 				transparent 0%,
-				#f2aa0050 25%,
-				#f2aa00 50%,
-				#f2aa0050 75%,
+				#d8131a50 25%,
+				#d8131a 50%,
+				#d8131a50 75%,
 				transparent 100%
 			)
 			1;
 		margin-bottom: 15px;
 	}
 
+	.sidemenu nav ul li.pager-container {
+		position: static;
+		display: flex;
+		justify-content: center;
+		width: auto;
+	}
+
+	.sidemenu nav ul li.pager-container a {
+		padding: 2;
+		margin-left: -20px;
+		width: auto;
+	}
+
+	.pager {
+		color: transparent !important; /* Torna a cor do texto transparente */
+		background-image: linear-gradient(to right, #d8131a, white);
+		background-clip: text; /* Recorta o fundo para a área do texto */
+		-webkit-background-clip: text; /* Compatibilidade com navegadores antigos */
+	}
+
 	.sidemenu h2 {
+		font-size: 30px;
 		text-align: center;
 		padding: 10px 20px;
-		font-family: cassol;
-		color: #f2aa00;
+		font-family: blacksword;
+		color: #d8131a;
 	}
 
 	.sidemenu p {
-		font-size: small;
+		font-size: 90%;
 		color: white;
-		text-align: center;
 		display: flex;
 		position: absolute;
-		left: 80px;
-		top: 40px;
+		left: 85px;
+		top: 60px;
 	}
 
 	.sidemenu nav ul {
@@ -418,7 +433,6 @@ const { id, title } = Astro.props;
 	}
 
 	.sidemenu nav ul li a {
-		font-size: 85%;
 		margin-left: 10px;
 		display: flex;
 		align-items: center;
@@ -434,12 +448,12 @@ const { id, title } = Astro.props;
 	}
 
 	.sidemenu nav ul li a:hover {
-		color: #f2aa00;
-		background-color: #f2aa0020;
+		color: #d8131a;
+		background-color: #d8131a20;
 	}
 
 	.active::before {
-		border-right: 4px solid #f2aa00;
+		border-right: 4px solid #d8131a;
 		content: "";
 		position: absolute;
 		left: 0;
@@ -452,57 +466,7 @@ const { id, title } = Astro.props;
 
 	.active {
 		position: relative;
-		color: #f2aa00 !important;
-	}
-
-	.link-card {
-		justify-content: center;
-		text-align: center;
-		list-style: none;
-		display: flex;
-		padding: 1px;
-		background-color: #f2aa00;
-		background-image: none;
-		background-size: 400%;
-		border-radius: 100px;
-		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-	}
-
-	.link-card > a {
-		width: 100%;
-		text-decoration: none;
-		line-height: 1.4;
-		padding: calc(1.5rem - 1px);
-		border-radius: 100px;
-		color: rgb(29, 22, 0);
-		background-color: #f2aa00;
-		opacity: 0.8;
-	}
-
-	.link-card h2 {
-		font-family: cassol;
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-
-	.link-card p {
-		font-family: cassol-light;
-		font-size: medium;
-		font-weight: 700;
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-	}
-
-	.link-card:is(:hover, :focus-within) {
-		background-position: 0;
-		background-image: var(--accent-gradient);
-	}
-
-	.link-card:is(:hover, :focus-within) h2 {
-		color: #ffffff;
+		color: #d8131a !important;
 	}
 
 	.fade-in {
