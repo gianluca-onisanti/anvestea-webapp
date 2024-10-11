@@ -1,43 +1,42 @@
 ---
+/// INDEX DE DESENVOLVEDOR
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import SideMenu from "../components/SideMenu.astro";
 
-const titulo = "Datasol Docs";
-const subtitulo =
-	"Boa-vindas! Aqui você acessa a documentação do App Datasol," +
-	" explicando funcionalidades e esclarecendo dúvidas. Escolha o seu público abaixo!";
 
-const props = {
-	devs: {
-		link: "/dev-sections/",
-		titulo: "Para Devs Cassol",
-		corpo: "Entenda como tudo funciona e se conversa nos bastidores.",
-	},
-	users: {
-		link: "/user-sections/",
-		titulo: "Para Usuários Cassol",
-		corpo: "Desfrute das funcionalidades do Datasol sem complicações!",
-	},
-};
+const pageTitle = 'Datasol Docs p/ Devs'
+
 ---
 
-<Layout title="Datasol Docs">
-	<main>
-		<div style="width: 980px; margin-left: -130px;">
-			<h1 class="letter">{titulo}</h1>
-			<p class="instructions">{subtitulo}</p>
-			<ul role="list" class="link-card-grid">
-				<Card
-					href={props.devs.link}
-					title={props.devs.titulo}
-					body={props.devs.corpo}
-				/>
-				<Card
-					href={props.users.link}
-					title={props.users.titulo}
-					body={props.users.corpo}
-				/>
-			</ul>
-		</div>
-	</main>
+<SideMenu
+    role="dev"
+    isOpen={true}
+    links={[
+        {
+            href: "/",
+            icon: "logout",
+            label: "Sair",
+        },
+        {
+            href: "./01_basicos/",
+            icon: "question_mark",
+            label: "Básicos",
+        },
+        {
+            href: "./02_relatorios-dinamicos/",
+            icon: "description",
+            label: "Relatórios Dinâmicos",
+        },
+        {
+            href: "./03_orcamento-expresso/",
+            icon: "speed",
+            label: "Orçamento Expresso",
+        },
+    ]}
+/>
+
+<Layout id="titulo" title={pageTitle}>
+    <main style="max-width: 750px;">
+
+    </main>
 </Layout>
