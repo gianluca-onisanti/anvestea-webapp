@@ -1,0 +1,51 @@
+---
+// Sidemenu.astro
+
+import Icon from "./Icon.astro";
+
+const { role = "dev | user", isOpen = false, links = []} = Astro.props;
+---
+
+<script>
+    // Procuramos a URL e sua parametragem
+    const urlParams = new URLSearchParams(window.location.search)
+    const markdownIndex = urlParams.get("markdown") ?
+        // Se um markdown estiver sendo exibido, ativa no CSS
+        Number(urlParams.get("markdown")) + 1 :
+        // Se não, verifica se é um menu de markdown, e se não for só colore o retorno 
+        window.location.pathname.includes('0') ? 1 : 0
+
+    const linkToActivate = document.getElementById(String(markdownIndex)); 
+    if (linkToActivate) {
+      linkToActivate.classList.add('active');
+    } 
+
+    // Transição lateral do Menu ao recarregar a página
+    document.addEventListener('DOMContentLoaded', () => {
+        const element = document.querySelector('.fade-in');
+        element?.classList.add('visible');
+    });
+</script>
+
+<div class="fade-in">
+    <aside class={`sidemenu ${isOpen ? "open" : ""}`}>
+        <div class="header">
+            <h2>Datasol Docs</h2>
+            <p>{role === "dev" ? "Sessão de Devs" : "Sessão de Usuários"}</p>
+        </div>
+        <nav>
+            <ul>
+                {
+                    links.map((link: any, e : number) => (
+                        <li>
+                            <a id={String(e)} href={link.href}>
+                                <Icon name={link.icon} />
+                                {link.label}
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
+        </nav>
+    </aside>
+</div>

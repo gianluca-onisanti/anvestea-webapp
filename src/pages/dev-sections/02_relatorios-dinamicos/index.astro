@@ -1,0 +1,88 @@
+---
+/// INDEX DE DESENVOLVEDOR
+import Layout from "../../../layouts/Layout.astro";
+import SideMenu from "../../../components/SideMenu.astro";
+
+const pageTitle = 'Sessão de Devs - Relatórios Dinâmicos'
+
+---
+
+<script>
+    // Extrair o parâmetro 'markdown' da URL
+    const urlParams = new URLSearchParams(window.location.search)
+    const markdownIndex = urlParams.get("markdown") || 0
+
+    // Aqui definimos o markdown dessa Sessão
+    const markdownFiles = [
+        "./01_introducao", 
+        "./02_estrutura-dos-dados",
+        "./03_filtros-dinamicos",
+        "./04_painel-de-edicao",
+        "./05_responsaveis",
+    ]
+
+    // Verificar se o índice é válido
+    if (
+        Number(markdownIndex) >= 0 &&
+        Number(markdownIndex) < markdownFiles.length
+    ) {
+        const markdownFile = markdownFiles[Number(markdownIndex)];
+
+        // Carregar o conteúdo Markdown usando fetch
+        fetch(markdownFile)
+            .then((response) => response.text())
+            .then((markdownContent) => {
+                // Renderizar o conteúdo Markdown no elemento 'main'
+                const mainElement = document.querySelector("main")
+                mainElement && (mainElement.innerHTML = markdownContent)
+            })
+            .catch((error) => {
+                console.error("Erro ao carregar o arquivo Markdown:", error)
+                // Lógica para lidar com o erro (exibir uma mensagem de erro, etc.)
+            });
+    } else {
+        console.error("Índice de Markdown inválido:", markdownIndex)
+        // Lógica para lidar com o índice inválido
+    }
+</script>
+
+<SideMenu
+    role="dev"
+    isOpen={true}
+    links={[
+        {
+            href: "../",
+            icon: "arrow_back",
+            label: "Voltar ao Menu",
+        },
+        {
+            href: "./?markdown=0",
+            icon: "info",
+            label: "RDs: Introdução",
+        },
+        {
+            href: "./?markdown=1",
+            icon: "storage",
+            label: "RDs: Estrutura dos dados",
+        },
+        {
+            href: "./?markdown=2",
+            icon: "filter_list",
+            label: "RDs: Filtros Dinâmicos",
+        },
+        {
+            href: "./?markdown=3",
+            icon: "edit_square",
+            label: "RDs: Painéis de Edição",
+        },
+        {
+            href: "./?markdown=4",
+            icon: "groups",
+            label: "RDs: Responsáveis",
+        }
+]}/>
+
+<Layout id="titulo" title={pageTitle}>
+    <main style="max-width: 750px;">
+    </main>
+</Layout>

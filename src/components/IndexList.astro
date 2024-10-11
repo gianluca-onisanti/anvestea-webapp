@@ -1,0 +1,36 @@
+---
+// IndexList.astro
+
+const { links = [] } = Astro.props;
+---
+
+<nav class="sidelist">
+    <div class="side-content">
+        <h4>Índice:</h4>
+        <ul>
+            <ul>
+                {
+                    links.map((link: any, index: number) => (
+                        <>
+                            <li>
+                                <a class="super" href={"#" + link.pointer}>
+                                    <span class="bold">{link.pointer}</span>
+                                    &emsp;{link.label}
+                                </a>
+                            </li>
+                            {link.subs.map((sublink: any) => (
+                                <li>
+                                    <a class="sub" href={"#" + sublink.pointer}>
+                                        &emsp;
+                                        <span class="bold">{link.pointer}</span>
+                                        &emsp;{sublink.label}
+                                    </a>
+                                </li>
+                            ))}
+                        </>
+                    ))
+                }
+            </ul>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,36 @@
+---
+/// INDEX DE USUÁRIO
+import Layout from "../../layouts/Layout.astro";
+import SideMenu from "../../components/SideMenu.astro";
+
+const pageTitle = 'Datasol Docs - Usuários'
+
+---
+
+<SideMenu
+    role="user"
+    isOpen={true}
+    links={[
+        {
+            href: "/",
+            icon: "logout",
+            label: "Sair",
+        },
+        {
+            href: "./01_o-que-e-datasol/",
+            icon: "question_mark",
+            label: "Básicos",
+        },
+        {
+            href: "./02_tutoriais/",
+            icon: "school",
+            label: "Tutoriais",
+        },
+    ]}
+/>
+
+<Layout id="titulo" title={pageTitle}>
+    <main style="max-width: 750px;">
+
+    </main>
+</Layout>
