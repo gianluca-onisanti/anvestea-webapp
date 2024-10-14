@@ -3,13 +3,6 @@ export default function markdownReader( markdownFiles = [] ) {
     const urlParams = new URLSearchParams(window.location.search)
     const markdownIndex = urlParams.get("markdown") || 0
 
-    // Aqui definimos o markdown dessa Sessão
-    // const markdownFiles = [
-    //     "./01_o-comeco-e-o-fim", 
-    //     "./02_tecnologias-escolhidas",
-    //     "./03_autenticacao"
-    // ]
-
     // Verificar se o índice é válido
     if (
         Number(markdownIndex) >= 0 &&
