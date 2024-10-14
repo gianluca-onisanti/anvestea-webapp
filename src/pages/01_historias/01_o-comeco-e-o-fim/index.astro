@@ -1,0 +1,45 @@
+---
+/// INDEX DE DESENVOLVEDOR
+import Layout from "../../../layouts/Layout.astro";
+import SideMenu from "../../../components/SideMenu.astro";
+
+const pageTitle = "O Começo (e o Fim)";
+---
+
+<script>
+    import markdownReader from "../../../components/markdownReader";
+
+    markdownReader([
+        "01_o-projeto-aphotema",
+        "02_a-antessala-da-rehumanidade",
+        "03_kronov-e-a-nova-hefestea",
+    ]);
+</script>
+
+<Layout id="titulo" title={pageTitle}>
+    <SideMenu
+        links={[
+            {
+                href: "../",
+                link: null,
+                label: "Histórias / O Começo (e o Fim)",
+            },
+            {
+                href: "./?markdown=0",
+                icon: "compost",
+                label: "O Projeto Aphotema",
+            },
+            {
+                href: "./?markdown=1",
+                icon: "foundation",
+                label: "A Antesala da Rehumanidade",
+            },
+            {
+                href: "./?markdown=2",
+                icon: "self_improvement",
+                label: "Kronov e a Nova Hefestea",
+            },
+        ]}
+    />
+    <main style="max-width: 750px;"></main>
+</Layout>

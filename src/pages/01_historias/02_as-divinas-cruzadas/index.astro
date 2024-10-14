@@ -1,0 +1,45 @@
+---
+/// INDEX DE DESENVOLVEDOR
+import Layout from "../../../layouts/Layout.astro";
+import SideMenu from "../../../components/SideMenu.astro";
+
+const pageTitle = "As Divinas Cruzadas";
+---
+
+<script>
+    import markdownReader from "../../../components/markdownReader";
+
+    markdownReader([
+        "01_a-alvorada-do-sabio",
+        "02_as-13-chaves-e-portoes",
+        "03_a-guerra-de-setealem",
+    ]);
+</script>
+
+<Layout id="titulo" title={pageTitle}>
+    <SideMenu
+        links={[
+            {
+                href: "../",
+                link: null,
+                label: "Histórias / As Divinas Cruzadas",
+            },
+            {
+                href: "./?markdown=0",
+                icon: "auto_stories",
+                label: "A Alvorada do Sábio",
+            },
+            {
+                href: "./?markdown=1",
+                icon: "private_connectivity",
+                label: "As 13 Chaves & Portões",
+            },
+            {
+                href: "./?markdown=2",
+                icon: "swords",
+                label: "A Guerra de Setealém",
+            },
+        ]}
+    />
+    <main style="max-width: 750px;"></main>
+</Layout>

@@ -3,40 +3,33 @@
 import Layout from "../layouts/Layout.astro";
 import SideMenu from "../components/SideMenu.astro";
 
-
-const pageTitle = "Início"
-
+const pageTitle = "Início";
 ---
 
-<SideMenu
-    role="dev"
-    isOpen={true}
-    links={[
-        {
-            href: "/",
-            icon: "new_releases",
-            label: "Novidades!",
-        },
-        {
-            href: "./01_historias/",
-            icon: "timeline",
-            label: "Histórias",
-        },
-        {
-            href: "./02_sistema-de-combate/",
-            icon: "sports_mma",
-            label: "Sistema de Combate",
-        },
-        {
-            href: "./03_classes-e-talentos/",
-            icon: "school",
-            label: "Classes e Talentos",
-        },
-    ]}
-/>
-
 <Layout id="titulo" title={pageTitle}>
-    <main style="max-width: 750px;">
-
-    </main>
+    <SideMenu
+        links={[
+            {
+                href: "/",
+                icon: "new_releases",
+                label: "Novidades!",
+            },
+            {
+                href: "./01_historias/",
+                icon: "timeline",
+                label: "Histórias",
+            },
+            {
+                href: "./02_sistema-de-combate/",
+                icon: "sports_mma",
+                label: "Sistema de Combate",
+            },
+            {
+                href: "./03_classes-e-talentos/",
+                icon: "school",
+                label: "Classes e Talentos",
+            },
+        ]}
+    />
+    <main style="max-width: 750px;"></main>
 </Layout>

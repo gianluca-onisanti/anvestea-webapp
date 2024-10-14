@@ -1,0 +1,55 @@
+---
+/// INDEX DE DESENVOLVEDOR
+import Layout from "../../../layouts/Layout.astro";
+import SideMenu from "../../../components/SideMenu.astro";
+
+const pageTitle = "O Começo (e o Fim)";
+---
+
+<Layout id="titulo" title={pageTitle}>
+    <SideMenu
+        links={[
+            {
+                href: "../",
+                link: null,
+                label: "Histórias / Nações, Impérios,...",
+            },
+            // {
+            //     href: "../",
+            //     link: map,
+            //     label: "Mapa Interativo,
+            // },
+            {
+                href: "./01_continente-tramontano/",
+                icon: "compost",
+                label: "Continente Tramontano",
+            },
+            {
+                href: "./02_continente-lanceiro/",
+                icon: "foundation",
+                label: "Continente Lanceiro",
+            },
+            {
+                href: "./03_continente-lupino/",
+                icon: "self_improvement",
+                label: "Continente Lupino",
+            },
+            {
+                href: "./04_arquipelagos-centrais/",
+                icon: "compost",
+                label: "Arquipélagos Centraos",
+            },
+            {
+                href: "./05_continente-reptiliano/",
+                icon: "foundation",
+                label: "Continente Reptiliano",
+            },
+            {
+                href: "./06_aglomerado-continental-oeste/",
+                icon: "self_improvement",
+                label: "Aglomerado Continental Oeste",
+            },
+        ]}
+    />
+    <main style="max-width: 750px;"></main>
+</Layout>
