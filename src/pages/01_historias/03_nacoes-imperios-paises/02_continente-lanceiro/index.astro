@@ -1,0 +1,87 @@
+---
+/// INDEX DE DESENVOLVEDOR
+import Layout from "../../../../layouts/Layout.astro";
+import SideMenu from "../../../../components/SideMenu.astro";
+
+const pageTitle = "Continente Lanceiro";
+---
+
+<script>
+    import markdownReader from "../../../../components/markdownReader";
+
+    markdownReader([
+        "./01_arista",
+        "./02_calavera",
+        "./03_imperio_nikolariano",
+        "./04_lancelot",
+        "./05_musa",
+        "./06_pais-da-casa",
+        "./07_pallas",
+        "./08_provincia-de-pedra",
+        "./09_ilha-primis",
+        "./10_reino-dos-norkins",
+    ]);
+</script>
+
+<Layout id="titulo" title={pageTitle}>
+    <SideMenu
+        links={[
+            {
+                href: "../",
+                icon: null,
+                label: "Nações,... / Continente Lanceiro",
+            },
+            {
+                href: "./?markdown=0",
+                icon: "hotel_class",
+                label: "Arista",
+            },
+            {
+                href: "./?markdown=1",
+                icon: "colorize",
+                label: "Calavera",
+            },
+            {
+                href: "./?markdown=2",
+                icon: "fort",
+                label: "Império Nikolariano",
+            },
+            {
+                href: "./?markdown=3",
+                icon: "sword_rose",
+                label: "Lancelot",
+            },
+            {
+                href: "./?markdown=4",
+                icon: "face_2",
+                label: "Musa",
+            },
+            {
+                href: "./?markdown=5",
+                icon: "cottage",
+                label: "País da Casa",
+            },
+            {
+                href: "./?markdown=6",
+                icon: "security",
+                label: "Pallas",
+            },
+            {
+                href: "./?markdown=7",
+                icon: "earthquake",
+                label: "Província de Pedra",
+            },
+            {
+                href: "./?markdown=8",
+                icon: "grass",
+                label: "Ilha Primis",
+            },
+            {
+                href: "./?markdown=9",
+                icon: "volcano",
+                label: "Reino dos Norkins",
+            },
+        ]}
+    />
+    <main style="max-width: 750px;"></main>
+</Layout>

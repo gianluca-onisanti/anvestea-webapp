@@ -1,0 +1,51 @@
+---
+/// INDEX DE DESENVOLVEDOR
+import Layout from "../../../../layouts/Layout.astro";
+import SideMenu from "../../../../components/SideMenu.astro";
+
+const pageTitle = "Continente Tramontino";
+---
+
+<script>
+    import markdownReader from "../../../../components/markdownReader";
+
+    markdownReader([
+        "./01_brazera",
+        "./02_campos-de-prata",
+        "./03_eriza",
+        "./04_etaliara",
+    ]);
+</script>
+
+<Layout id="titulo" title={pageTitle}>
+    <SideMenu
+        links={[
+            {
+                href: "../",
+                icon: null,
+                label: "Nações,... / Continente Tramontino",
+            },
+            {
+                href: "./?markdown=0",
+                icon: "local_fire_department",
+                label: "Brazera",
+            },
+            {
+                href: "./?markdown=1",
+                icon: "terrain",
+                label: "Campos de Prata",
+            },
+            {
+                href: "./?markdown=2",
+                icon: "female",
+                label: "Eriza",
+            },
+            {
+                href: "./?markdown=3",
+                icon: "nights_stay",
+                label: "Etaliara",
+            }
+        ]}
+    />
+    <main style="max-width: 750px;"></main>
+</Layout>
