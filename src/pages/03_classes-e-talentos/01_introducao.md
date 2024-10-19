@@ -19,15 +19,28 @@
 </nav>
 
 <div class='title'>
-<h2 id="1.">Introdução: dedução de preço em segundos</h2>
+<h2 id="1.">Sistema em pentagrama</h2>
 <hr class='solid'>
 </div>
 
-Um dos processos mais importantes para um vendedor da Cassol é orçar o quanto será gasto em uma obra de acordo com o que o cliente pede. Porém, apesar de simples, é um processo que depende de muitas variáveis, e demora muito mais que alguns simples segundos.
+É possível escolher 6 classes: **Destruidor, Colosso, Conjurador, Lutador, Assassino e Generalista.** Nenhuma classe tem uma vantagem inata direta uma contra as outras, mas cada um tem uma função específica. O **Destruidor** pode causar MUITO dano em pouquíssimo tempo, enquanto o **Conjurador** traz mais utilidade, segurança e dano cadenciado. O **Lutador** aguenta porrada enquanto consegue ferir o inimigo ao mesmo tempo, sendo que o **Colosso** é uma verdadeira muralha, aguentado o máximo de dano possível e dando aquela força a seus aliados nas linhas mais atrás. O **Assassino** age nos flancos e sorrateiramente, caçando alvos mais solitários e/ou mais frágeis.
 
-Se faz necessário, por exemplo, calcular quantas vigas, pilares e lajes devem ser feitas, o tanto de aço pra cada peça, se o galpão tem mezanino, docas, e infidáveis outras considerações que devem ser feitas.
+As classes seguem a ordem de ***Destruidor > Colosso > Conjurador > Lutador > Assassino.*** Isto ocorre porquê naturalmente as funções de cada classe tem ferramentas para lidarem com as outras. O Destruidor causará mais dano que o Colosso
 
-Porém esta demora em uma proposta com o cliente pode significar a perda de um cliente pra um concorrente que orçe antes que nós, por exemplo. **E é por este motivo que o 'Orçamento Expresso' foi projetado!**
+<div id='1.a' class='note'>
+
+- O **Destruidor** causa mais dano que o **Colosso** pode aguentar naturalmente.
+- O **Colosso** consegue facilmente lidar com o dano mais cadenciado e as artimanhas dos **Conjuradores**.
+- **Conjuradores** geram muita dor de cabeça e frustração a **Lutadores** que tentam investir neles naturalmente.
+- **Lutadores** acabam com a festa de **Assassinos** que queiram os pegar no mano-a-mano.
+- Alvos frágeis e sem muita proteção, como **Destruidores**, são contrato bem-sucedido para **Asassinos**.
+
+</div>
+
+"Mas é um "pentagrama" e tem 6 classes? Isto está certo?" - você me pergunta.
+
+
+
 
 <div class='title'>
 <h2 id='2.'>Na prática</h2>

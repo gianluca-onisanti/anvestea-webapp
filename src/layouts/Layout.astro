@@ -67,16 +67,38 @@ const { id, title } = Astro.props;
 		line-height: 1.6;
 	}
 
-	@media (min-width: 1200px) {
+	@media (width: 1280px) {
 		main {
-			margin-left: 405px;
+			padding: 0px 0px 0px 60px;
+			width: 600px !important;
 		}
 	}
 
-	/* Para telas maiores que 1400px */
-	@media (min-width: 1400px) {
+	@media (width: 1280px) {
 		main {
-			margin-left: 505px;
+			padding: 0px 0px 0px 60px;
+			width: 600px !important;
+		}
+	}
+
+	@media (min-width: 1281px) {
+		main {
+			padding: 0px 0px 0px 60px;
+			width: 700px !important;
+		}
+	}
+
+	@media (min-width: 1370px) {
+		main {
+			padding: 0px 0px 0px 60px;
+			width: 780px !important;
+		}
+	}
+
+	@media (min-width: 1800px) {
+		main {
+			padding: 0px 0px 0px 310px;
+			width: 780px !important;
 		}
 	}
 
@@ -173,7 +195,7 @@ const { id, title } = Astro.props;
 		background: #150b0b;
 		color: #d8131a;
 		position: fixed;
-		width: 240px;
+		width: 260px;
 		right: 0;
 		top: 0;
 		height: 100vh;
@@ -200,6 +222,7 @@ const { id, title } = Astro.props;
 	}
 
 	.sidelist ul {
+		margin-left: 15px;
 		font-family: "anvestea";
 		list-style: none;
 		padding: 0;
