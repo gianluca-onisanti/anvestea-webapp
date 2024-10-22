@@ -3,17 +3,18 @@
 import Layout from "../../layouts/Layout.astro";
 import SideMenu from "../../components/SideMenu.astro";
 
-const pageTitle = "Classes e Talentos";
+const pageTitle = "Combate, Classes...";
 ---
 
 <script>
     import markdownReader from "../../components/markdownReader";
 
     markdownReader([
-        "./01_introducao",
-        "./02_react-google-maps",
-        "./03_api-flask",
-        "./04_fluxo-completo",
+        "./01_turnos-e-acoes",
+        "./02_saques-e-drops-de-itens",
+        "./03_classes",
+        "./04_catalogo-de-talentos",
+        "./05_subclasse-e-evolucoes",
     ]);
 </script>
 
@@ -23,27 +24,32 @@ const pageTitle = "Classes e Talentos";
             {
                 href: "../",
                 icon: null,
-                label: "Início / Classes e Talentos",
+                label: `Início / ${pageTitle}`,
             },
             {
                 href: "./?markdown=0",
-                icon: "info",
-                label: "OE: Introdução",
+                icon: "gavel",
+                label: "Turnos & Ações",
             },
             {
                 href: "./?markdown=1",
-                icon: "room",
-                label: "OE: React Google Maps",
+                icon: "star_half",
+                label: "Saques & Drop de Itens",
             },
             {
                 href: "./?markdown=2",
-                icon: "calculate",
-                label: "OE: Calculadora Perimétrica (API Flask)",
+                icon: "school",
+                label: "Classes",
             },
             {
                 href: "./?markdown=3",
-                icon: "refresh",
-                label: "OE: Fluxo Completo",
+                icon: "receipt_long",
+                label: "Catálogo de Talentos",
+            },
+            {
+                href: "./?markdown=4",
+                icon: "rocket",
+                label: "Subclasse & Evoluções",
             },
         ]}
     />

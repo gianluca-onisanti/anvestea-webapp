@@ -3,12 +3,9 @@
 import Icon from "./Icon.astro";
 
 const { links = [], menu } = Astro.props;
-
-const isMenu : string = menu === true ? 'true' : 'false'
 ---
 
 <script>
-// <script define:vars={isMenu}>
 
     const urlParams = new URLSearchParams(window.location.search);
     const markdownIndex = urlParams.get("markdown")
@@ -20,8 +17,7 @@ const isMenu : string = menu === true ? 'true' : 'false'
           : 0;
 
     const linkToActivate = document.getElementById(String(markdownIndex));
-    if (linkToActivate) {
-    // if (linkToActivate && (isMenu === 'false')) {
+    if (linkToActivate) {   
         linkToActivate.classList.add("active");
     }
 
