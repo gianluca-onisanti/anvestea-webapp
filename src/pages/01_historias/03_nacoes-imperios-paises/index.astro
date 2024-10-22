@@ -3,11 +3,18 @@
 import Layout from "../../../layouts/Layout.astro";
 import SideMenu from "../../../components/SideMenu.astro";
 
-const pageTitle = "O Começo (e o Fim)";
+const pageTitle = "Nações, Impérios,...";
 ---
+
+<script>
+import markdownReader from "../../../components/markdownReader";
+
+    markdownReader(["./main",])
+</script>
 
 <Layout id="titulo" title={pageTitle}>
     <SideMenu
+        menu={true}
         links={[
             {
                 href: "../",
@@ -45,11 +52,12 @@ const pageTitle = "O Começo (e o Fim)";
                 label: "Continente Reptiliano",
             },
             {
-                href: "./06_aglomerado-continental-oeste/",
+                href: "./06_aglomerado-ocidental/",
                 icon: "temple_buddhist",
-                label: "Aglomerado Continental Oeste",
+                label: "Aglomerado Ocidental",
             },
         ]}
     />
-    <main style="max-width: 750px;"></main>
+    <main style="max-width: 750px;">
+    </main>
 </Layout>

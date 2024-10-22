@@ -3,17 +3,16 @@
 import Layout from "../../../../layouts/Layout.astro";
 import SideMenu from "../../../../components/SideMenu.astro";
 
-const pageTitle = "Nações, Impérios, Países";
+const pageTitle = "Continente Reptiliano";
 ---
 
 <script>
     import markdownReader from "../../../../components/markdownReader";
 
     markdownReader([
-        "./01_brazera",
-        "./02_campos-de-prata",
-        "./03_eriza",
-        "./04_etaliara",
+        "./01_caronte",
+        "./02_reptilia",
+        "./03_terras-do-apocalipse",
     ]);
 </script>
 
@@ -23,28 +22,23 @@ const pageTitle = "Nações, Impérios, Países";
             {
                 href: "../",
                 icon: null,
-                label: "Nações,... / Continente Tramontino",
+                label: `Nações,... / ${pageTitle}`,
             },
             {
                 href: "./?markdown=0",
-                icon: "local_fire_department",
-                label: "Brazera",
+                icon: "kayaking",
+                label: "Caronte",
             },
             {
                 href: "./?markdown=1",
-                icon: "terrain",
-                label: "Campos de Prata",
+                icon: "mode_dual",
+                label: "Reptilia",
             },
             {
                 href: "./?markdown=2",
-                icon: "female",
-                label: "Eriza",
+                icon: "emergency",
+                label: "Terras do Apocalipse",
             },
-            {
-                href: "./?markdown=3",
-                icon: "nights_stay",
-                label: "Etaliara",
-            }
         ]}
     />
     <main style="max-width: 750px;"></main>

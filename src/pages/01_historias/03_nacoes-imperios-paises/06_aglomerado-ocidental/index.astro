@@ -3,17 +3,16 @@
 import Layout from "../../../../layouts/Layout.astro";
 import SideMenu from "../../../../components/SideMenu.astro";
 
-const pageTitle = "Continente Tramontino";
+const pageTitle = "Aglomerado Ocidental";
 ---
 
 <script>
     import markdownReader from "../../../../components/markdownReader";
 
     markdownReader([
-        "./01_brazera",
-        "./02_campos-de-prata",
-        "./03_eriza",
-        "./04_etaliara",
+        "./01_freya",
+        "./02_ilhas-salocin",
+        "./03_naraka",
     ]);
 </script>
 
@@ -23,28 +22,23 @@ const pageTitle = "Continente Tramontino";
             {
                 href: "../",
                 icon: null,
-                label: "Nações,... / Continente Tramontino",
+                label: `Nações,... / ${pageTitle}`,
             },
             {
                 href: "./?markdown=0",
-                icon: "local_fire_department",
-                label: "Brazera",
+                icon: "bookmark_heart",
+                label: "Freya",
             },
             {
                 href: "./?markdown=1",
-                icon: "terrain",
-                label: "Campos de Prata",
+                icon: "format_paint",
+                label: "Ilhas Salocin",
             },
             {
                 href: "./?markdown=2",
-                icon: "female",
-                label: "Eriza",
+                icon: "landscape_2",
+                label: "Naraka",
             },
-            {
-                href: "./?markdown=3",
-                icon: "nights_stay",
-                label: "Etaliara",
-            }
         ]}
     />
     <main style="max-width: 750px;"></main>

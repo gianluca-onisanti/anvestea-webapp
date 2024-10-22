@@ -1,5 +1,5 @@
 <div class='title'>
-<h2>Campos de Prata</h2>
+<h2>As divisões dos países</h2>
 <hr class='solid'>
 </div>
 

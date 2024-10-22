@@ -2,11 +2,14 @@
 // Sidemenu.astro
 import Icon from "./Icon.astro";
 
-const { links = [] } = Astro.props;
+const { links = [], menu } = Astro.props;
+
+const isMenu : string = menu === true ? 'true' : 'false'
 ---
 
 <script>
-    // Procuramos a URL e sua parametragem
+// <script define:vars={isMenu}>
+
     const urlParams = new URLSearchParams(window.location.search);
     const markdownIndex = urlParams.get("markdown")
         ? // Se um markdown estiver sendo exibido, ativa no CSS
@@ -18,6 +21,7 @@ const { links = [] } = Astro.props;
 
     const linkToActivate = document.getElementById(String(markdownIndex));
     if (linkToActivate) {
+    // if (linkToActivate && (isMenu === 'false')) {
         linkToActivate.classList.add("active");
     }
 
