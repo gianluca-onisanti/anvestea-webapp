@@ -10,7 +10,7 @@ const { id, title } = Astro.props;
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -38,7 +38,10 @@ const { id, title } = Astro.props;
 	}
 </script>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+<link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+/>
 
 <style is:global>
 	@font-face {
@@ -123,6 +126,31 @@ const { id, title } = Astro.props;
 	.letter {
 		color: #d8131a;
 		font-family: anvestea;
+	}
+
+	.note-title {
+		font-size: 36px;
+		font-family: blacksword;
+		font-weight: lighter;
+	}
+
+	.note-sub {
+		font-size: 14px;
+		font-style: italic;
+		margin-top: -8px;
+		margin-bottom: 30px;
+		justify-content: center;
+		display: flex;
+	}
+
+	.note-sub::before {
+		margin-right: 5px;
+		content: "————";
+	}
+
+	.note-sub::after {
+		margin-left: 5px;
+		content: "————";
 	}
 
 	.link-card-grid {

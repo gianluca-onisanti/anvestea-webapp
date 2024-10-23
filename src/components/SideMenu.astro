@@ -2,10 +2,20 @@
 // Sidemenu.astro
 import Icon from "./Icon.astro";
 
-const { links = [], menu } = Astro.props;
+const { links = [], raw = false } = Astro.props;
 ---
 
+<div 
+    class="is-raw" 
+    data-raw={raw ? 'true' : 'false'} 
+    id="is-raw"
+/>
+
 <script>
+
+    // AQUI ESTÁ COMO CONSEGUIR DADOS DE FORA
+    const data = document.getElementById('is-raw')?.getAttribute('data-raw')
+    const isRaw = data === 'true' ? true : false
 
     const urlParams = new URLSearchParams(window.location.search);
     const markdownIndex = urlParams.get("markdown")
@@ -13,7 +23,7 @@ const { links = [], menu } = Astro.props;
           Number(urlParams.get("markdown")) + 1
         : // Se não, verifica se é um menu de markdown, e se não for só colore o retorno
           window.location.pathname.includes("0")
-          ? 1
+          ? isRaw ? null : 1
           : 0;
 
     const linkToActivate = document.getElementById(String(markdownIndex));
