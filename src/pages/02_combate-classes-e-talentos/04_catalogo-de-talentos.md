@@ -32,7 +32,6 @@
 
 <div id='1.' class='item'>
 <h3>Destruidor</h3>
-<hr class='solid'>
 </div>
 
 <!-- ---------------------------- -->
@@ -98,7 +97,7 @@ Estar encurralado por mais de um inimigo ou um chefe lhe concede a chance de se 
 <!-- ---------------------------- -->
 <div class='note'>
 
-<span class='note-title'>Favorito do do Twingos’ Bar</span><br />
+<span class='note-title'>Favorito do Twingos’ Bar</span><br />
 <span class='note-sub'>Incentivo a agressividade em lutas</span>
 
 **(Ativa, após menos de 20% de vida)** Estar encurralado por mais de um inimigo ou um chefe lhe concede a chance de se esquivar de golpes enquanto estiver nessa situação. Para esquivar de golpes você deve tirar um dado maior ou igual ao do inimigo. Desvios críticos lhe concedem um crítico garantido de 150% contra o agressor.
@@ -113,27 +112,22 @@ Surto Arcanóide Repentino
 
 <div id='2.' class='item'>
 <h3>Colosso</h3>
-<hr class='solid'>
 </div>
 
 <div id='3.' class='item'>
 <h3>Conjurador</h3>
-<hr class='solid'>
 </div>
 
 <div id='4.' class='item'>
 <h3>Guerreiro</h3>
-<hr class='solid'>
 </div>
 
 <div id='5.' class='item'>
 <h3>Assassino</h3>
-<hr class='solid'>
 </div>
 
 <div id='6.' class='item'>
 <h3>Generalista</h3>
-<hr class='solid'>
 </div>
 
 <div class='end'>
