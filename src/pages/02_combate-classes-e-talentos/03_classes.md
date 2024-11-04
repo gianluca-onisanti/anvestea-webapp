@@ -2,6 +2,9 @@
   <div class='side-content'>
   <h4>Índice:</h4>
   <ul>
+    <li><a class='super' href="#0.">
+      <span class='bold'>0.</span>Introdução
+    </a></li>
     <li><a class='super' href="#1.">
       <span class='bold'>1.</span>Destruidor
     </a></li>
@@ -25,10 +28,12 @@
 </nav>
 
 
-<div class='title'>
+<div id='0.' class='title'>
 <h2>Classes</h2>
 <hr class='solid'>
 </div>
+
+As classes ...
 
 <div id='1.' class='item'>
 <h3>Destruidor</h3>
@@ -38,7 +43,7 @@ Seu nome é autoexplicativo: destruidores são feitos para **causar dano em suma
 
 Seus talentos de classe são focados exclusivamente em modificadores de acertos fortes e críticos, seja para causar ainda mais dano ou ganhar alguma vantagem no campo de batalha. Por esse motivo, nativamente destruidores **não têm um modificador de turno exclusivo da classe**, sendo relativamente dependentes de seus [poderosíssimos talentos](?markdown=3#1.) e vítimas de uma defesa nativa inexistente. **Aqui, é matar... ou morrer tentando!**
 
-Não tem nenhum "Card de Modificador" aqui, mas que tal aproveitar esse vazio e [aprender mais sobre os críticos?]()
+Aqui não tem nenhum "Card de Modificador". Aproveite esse vazio e [clique aqui para aprender mais sobre os críticos!]()
 
 <div id='2.' class='item'>
 <h3>Colosso</h3>
@@ -66,16 +71,44 @@ Dano direto, seja de magias, ataques ou turnos especiais, como armadilhas e bomb
 <h3>Conjurador</h3>
 </div>
 
-A primeira vista, a classe de Conjurador parece representar magos, magias e feitiços, porém longe disto. Aqui você pode encontrar de tudo, **até mesmo aqueles que não conjuram nenhum tipo de magia, sabia?** 
+A primeira vista, a classe de Conjurador parece representar apenas magos, bruxos e feiticeiros, porém longe disto. Aqui você pode encontrar de tudo, **até mesmo aqueles que não conjuram nenhum tipo de magia, sabia?**
 
-<div id='1.' class='item'>
+Os conjuradores funcionam de maneira similar aos destruidores, porém não apresentam tanto dano quanto os mesmos. Aliás, o foco deles não é causar extremo dano, porém adicionar camadas de abstração no dano causado, gerando malefícios a inimigos e benefícios ao time como um todo.
+
+Igualmente seus irmãos destruidores, eles também não possuem um modificador de turno convencional. Todavia, caso alguma conjuração ou imbuição mágica falhe, **você não perderá seu turno e poderá fazer outra ação, porém não poderá realizar a mesma em que falhou até o próximo turno.** [Neste tópico aqui falamos bem certinho sobre turnos e ações](?markdown=0)
+
+<div id='4.' class='item'>
 <h3>Guerreiro</h3>
 </div>
 
-<div id='1.' class='item'>
+Um clássico que nunca envelhece, não é mesmo? O lutador é aquele bom equilíbrio entre porradaria e durabilidade. É pra quem quer se arriscar em batalha, mas sem perder em dano e velocidade como um colosso perde por muitas vezes.
+
+Os gurreiros, diferentemente dos colossos, tem um modificador de turno adaptativo, um **D20 de Contra-evasão, que pode virar um D20 Contra-ataque ou um D20 de Aparagem**, que diferem pela proximidade do ataque.
+
+<div class='note'>
+
+### D20 Contra-evasivo:
+
+#### Ataques recebidos corpo-a-corpo:
+
+Dano causado **de perto pelo inimigo**, seja magia ou ataque, transformam seu **D20 em Contra-ataque** como resposta. Caso o seu D20 seja maior que o do inimigo, **inibirá 100% do dano e lhe concederá um D20 de Contra-ataque.** O contra-ataque é involuntário e instintivo, isto é, você não poderá controlar como  contra atacará o inimigo.
+
+**Contra-ataques críticos (20 no D20)** efetuados em cima de dados de ataque inimigos **menores que 19** lhe concedem um **D20 de Ataque de Oportunidade** fora todos os benefícios anteriormente citados.
+
+**Dados iguais SEMPRE causarão empate, mesmo sendo 20 vs. 20.** Empates fazem nada acontecer.
+
+#### Ataques recebidos a distância:
+
+Agora, **dano causado por artilharia** lhe concederá um **D20 de Aparagem.** É um dado mais fraco se comparado ao de contra-ataque e depende muito mais da sorte do jogador. Para aparar o dano é necessário **tirar um dado próximo ao do inimigo (Ex.: tirar 9, 10 ou 11 contra um 10).** Tirar o dado exato **(Ex.: 10 vs. 10)** apara 100% o dano. Tirar um dado acima ou abaixo **(Ex.: 9 ou 11 vs. 10)** apara 50% do dano. Abaixo disso o dado não irá funcionar!
+
+*Caso o inimigo tire um ***1 no D20*** considere 20 como um número anterior. Caso ***20 no D20*** só será possível aparar com 20 ou 19 no D20.**
+
+</div>
+
+<div id='5.' class='item'>
 <h3>Assassino</h3>
 </div>
 
-<div id='1.' class='item'>
+<div id='6.' class='item'>
 <h3>Generalista</h3>
 </div>

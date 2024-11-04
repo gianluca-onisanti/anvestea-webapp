@@ -134,6 +134,24 @@ const { id, title } = Astro.props;
 		font-weight: lighter;
 	}
 
+	.note-sup {
+		margin-bottom: -5px;
+		font-size: 14px;
+		font-style: italic;
+		justify-content: center;
+		display: flex;
+	}
+
+	.note-sup::before {
+		margin-right: 5px;
+		content: "————";
+	}
+
+	.note-sup::after {
+		margin-left: 5px;
+		content: "————";
+	}
+
 	.note-sub {
 		font-size: 14px;
 		font-style: italic;
@@ -524,4 +542,5 @@ const { id, title } = Astro.props;
 		opacity: 1;
 		transform: translateY(0);
 	}
+
 </style>
