@@ -109,6 +109,34 @@ Agora, **dano causado por artilharia** lhe concederá um **D20 de Aparagem.** É
 <h3>Assassino</h3>
 </div>
 
+Às vezes, você apenas quer pegar o inimigo desprevinido, acabar com sua vida e sumir como uma sombra assim que atingida pelos holofotes; e esta classe lhe entrega exatamente isto.
+
+A classe em questão possui três modificadores distintos: um **D20 de Esquiva**, para desviar de ataques e um **D20 de Furtividade**, para realizar ataques sorrateiros bem-sucedidos. Você pode se deparar com o  **D3 de Letalidade**, mas ele só é aplicável em [talentos]() e [finalizações](), porém ele se encaixa em uma única situação e falaremos dele aqui também!
+
+<div class='note'>
+
+### D20 de Esquiva:
+
+Ao receber um golpe que de frente (que você esteja visualizando), ganha esse D20 de Esquiva. **Para esquivar com sucesso do ataque você deve tirar um dado maior ou igual ao do ataque do inimigo.** Caso o contrário, você receberá o dano cheio do ataque (exceto caso um talento/condição abafe o dano recebido).
+
+</div>
+
+<div class='note'>
+
+### D20 de Furtividade:
+
+Antes de atacar (apenas fora de combate direto) recebe um **D20 de Furtividade**. Tirar 12 ou mais no dado garante um ataque furtivo no próximo turno, que não poderá ser falho ou defendido pelo inimigo. Tirando menos que 12 o inimgo irá rolar um **D20 de Percepção** para tentar detectar o seu ataque, e você deve vencer ele neste dado para realizar o ataque.
+
+</div>
+
+<div class='note'>
+
+### D3 de Letalidade:
+
+Em inimigos comuns, tirar um D20 de Ataque de valor 18 ou mais após o **D20 de Furtividade** contará **como uma finalização**. E então você pode rolar um D3 de Letalidade, que irá simplesmente **multiplicar o seu dado de ataque a este** e causará o dano completo sem defesas.
+
+</div>
+
 <div id='6.' class='item'>
 <h3>Generalista</h3>
 </div>
