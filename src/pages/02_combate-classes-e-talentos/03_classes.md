@@ -41,9 +41,21 @@ As classes ...
 
 Seu nome é autoexplicativo: destruidores são feitos para **causar dano em suma maioria seus turnos**, além de serem condicionados e benefíciados ao obter altos coeficientes em dados D20. 
 
-Seus talentos de classe são focados exclusivamente em modificadores de acertos fortes e críticos, seja para causar ainda mais dano ou ganhar alguma vantagem no campo de batalha. Por esse motivo, nativamente destruidores **não têm um modificador de turno exclusivo da classe**, sendo relativamente dependentes de seus [poderosíssimos talentos](?markdown=3#1.) e vítimas de uma defesa nativa inexistente. **Aqui, é matar... ou morrer tentando!**
+Seus talentos de classe são focados exclusivamente em modificadores de acertos fortes e críticos, seja para causar ainda mais dano ou ganhar alguma vantagem no campo de batalha. **Aqui, é matar... ou morrer tentando,** então [clique aqui para aprender mais sobre os críticos!]()
 
-Aqui não tem nenhum "Card de Modificador". Aproveite esse vazio e [clique aqui para aprender mais sobre os críticos!]()
+Todavia, destruidores não são de ferro, e todo mundo erra de vez em quando. Por isto, seu modificador de dado é um **'D20 de Recalibregem'**, que lhe concede uma ajudinha para dados iguais ou menores do que 5 (desconsiderando modificadores).
+
+<div class='note'>
+
+### D20 de Recalibragem:
+
+O nome é muito chique, mas simplificando é **uma segunda chance** para seu ataque fracassado (5 ou menos em um D20 de Ataque **apenas**). Este modificador é **OPCIONAL**, isto é, você pode escolher se quer ou não ativar sua segunda chance. Funciona como um ataque convencional, mas basicamente como se estivesse tentando outra vez.
+
+Se o **seu dado da segunda chance for igual ou menor a 5 novamente** seu golpe falhará e você perderá o próximo turno!
+
+*É parça, nem sempre a vida é um morango.*
+
+</div>
 
 <div id='2.' class='item'>
 <h3>Colosso</h3>
@@ -140,3 +152,21 @@ Em inimigos comuns, tirar um D20 de Ataque de valor 18 ou mais após o **D20 de 
 <div id='6.' class='item'>
 <h3>Generalista</h3>
 </div>
+
+A primeiro momento, esta classe parece não fazer nada em comparação as outras. E de certa forma ela realmente não faz! 
+
+Os generalistas são focados unicamente em combate via talentos. É basicamente escolher e fazer do seu jeito, e isso sem ter nenhum modificador de dado!
+
+<div class='note'>
+
+### Como escolher:
+
+> 1x Talento de Classe de **qualquer foco, de qualquer classe do jogo**
+
+> 1x Talento de Classe com foco em **Utilidade**, de **qualquer classe MENOS a escolhida acima**.
+
+> 1x Talento de **Utilidade de Generalista**
+
+</div>
+
+<div class='end'>
