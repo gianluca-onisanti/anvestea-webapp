@@ -83,11 +83,49 @@ Dano direto, seja de magias, ataques ou turnos especiais, como armadilhas e bomb
 <h3>Conjurador</h3>
 </div>
 
-A primeira vista, a classe de Conjurador parece representar apenas magos, bruxos e feiticeiros, porém longe disto. Aqui você pode encontrar de tudo, **até mesmo aqueles que não conjuram nenhum tipo de magia, sabia?**
+A primeira vista, a classe de Conjurador parece representar apenas magos, bruxos e feiticeiros, porém longe disto. Aqui você pode encontrar de tudo, **até mesmo aqueles que não conjuram nenhum tipo de magia de forma natural, sabia?**
 
 Os conjuradores funcionam de maneira similar aos destruidores, porém não apresentam tanto dano quanto os mesmos. Aliás, o foco deles não é causar extremo dano, porém adicionar camadas de abstração no dano causado, gerando malefícios a inimigos e benefícios ao time como um todo.
 
-Igualmente seus irmãos destruidores, eles também não possuem um modificador de turno convencional. Todavia, caso alguma conjuração ou imbuição mágica falhe, **você não perderá seu turno e poderá fazer outra ação, porém não poderá realizar a mesma em que falhou até o próximo turno.** [Neste tópico aqui falamos bem certinho sobre turnos e ações](?markdown=0)
+Caso alguma conjuração ou imbuição mágica falhe, **você não perderá seu turno e poderá fazer outra ação, porém não poderá realizar a mesma em que falhou até o próximo turno.** [Neste tópico aqui falamos bem certinho sobre turnos e ações](?markdown=0)
+
+O modificador de turno dos conjuradores é o **'D100 de Efeito'**. Ele não causa mais dano exatamente, mas um dado que cria condições adversas a todos em campo de acordo com a mágia/golpe que você realizar durante esse período.
+
+<div class='note'>
+
+### D100 de Efeito:
+
+Quase como um dado de sorte, ao causar dano relacionado a magia com um 16 ou mais em um D20 de Ataque (sem modificadores) este modificador pode ser OPCIONALMENTE ativado.
+
+Ao rolar esse D20, irá separar ele em 4 categorias de escala de acordo com o que você tirar nele (lembrando que quanto maior o dado na escola maior será a adversidade). A adversidade levará em conta as consequências e fantasias de sua magia.
+
+*Obs.: levaremos em conta nos exemplos três golpes mágicos, respectivamente: tremores de terra, ventos e bola de fogo.*
+
+#### Categoria I: Brando (39 ou menos no D20):
+
+Nesse estágio, os efeitos em campo são irrisórios e leves, não causando grandes transtornos a quem estiver em campo de batalha e não alterando o combate de forma direta.
+
+*Ex.: Pequenos buracos na calçada da praça, leve desequilíbrio pelo vento, pequenas labaredas no gramado.*
+
+#### Categoria II: Moderado (40 até 59 no D20):
+
+Aqui os efeitos já começam a ser notados, e algumas condicionais já podem preocupar a todos em campo, ou seja, tirar dados ruins aqui já podem lhe causar algum dano.
+
+*Ex.: Buracos medianos e fundos na calçada da praça, objetos voadores em alta velocidade chocando nas pessoas, fogo contínuo e alastrado no gramado.*
+
+#### Categoria III: Grave (60 até 84 no D20):
+
+Já se tornam bem mais perigosos os efeitos e a forma de batalha terá de ser totalmente adaptada com base nas adversidades do terreno. Agora um campo de batalha é um inimigo real a todos. Daqui em diante medidas para conter e eliminar algumas adversidades podem se fazer necessárias.
+
+*Ex.: rachaduras largas no solo e terrenos irregulares e pontiagudos, perda de controle e grandes objetos lançados a mais de 100km por hora, fogo forte e queimadas grandes no local.*
+
+#### Categoria IV: Catasclísmico (85 ou mais no D20):
+
+Um verdadeiro desastre. Se torna difícil para o inimigo e sua equipe lidar com a situação de forma calma. O campo se tornará o inimigo mais perigoso e poderá facilmente levar todos a morte iminente. Usar esta condição para derrotar seu inimigo pode ser seu maior trunfo ou sua maior maldição.
+
+*Ex.: abismos de terra e crateras quase quilométricas, elevação aos céus em altíssima velocidade por um tornado, incêndio generalizado e imparável em todo o perímetro*
+
+</div>
 
 <div id='4.' class='item'>
 <h3>Guerreiro</h3>
