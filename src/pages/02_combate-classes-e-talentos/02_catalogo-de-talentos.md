@@ -29,6 +29,10 @@
 <hr class='solid'>
 </div>
 
+Como citado anteriormente, os talentos servem como habilidades especiais pré-definidas de seus personagens. **Eles alteram o modus operandi do seu personagem** e lhe permitem **melhorar** o que ele já faz de melhor ou **abranger** mais coisas para ele fazer.
+
+A seguir temos os talentos, separados por classe. **Exceto para generalistas**, você só pode escolher um talento correspondente a sua classe. *Não confunda com o foco do talentom que aparece logo em cima do nome do talento!*
+
 <div id='1.' class='title'>
 <h2>Destruidor</h2>
 <hr class='solid'>
@@ -50,7 +54,7 @@ Possui 5+ no d20 para demolição de estruturas, como muros, portões e torres. 
 <div class='note'>
 
 <span class='note-sup'>Defesa I</span>
-<span class='note-title'>"Bênção de Sir Casablancas”</span><br />
+<span class='note-title'>"A Bênção de Sir Casablancas”</span><br />
 <span class='note-sub'>Durabilidade contra críticos</span>
 
 Finalizar um inimigo lhe concede resistência a críticos por 3 turnos, além de multiplicar em duas vezes a velocidade em que você se movimenta em direção a inimigos. Receber ou causar críticos neste período lhe concedem um d20 de cura.
@@ -170,7 +174,7 @@ Inimigos comuns isolados, com nenhum aliado nas imediações, sofrem dano aument
 <div class='note'>
 
 <span class='note-sup'>Utilidade II</span>
-<span class='note-title'>"Remetente - X - Destinatário"</span><br />
+<span class='note-title'>"Remetente & Destinatário"</span><br />
 <span class='note-sub'>Penetração de armadura</span>
 
 **(Ativa)** Encanta seu golpe com “mensagem”. A “mensagem” detecta a magia ou a fraqueza do inimigo. Golpes fortes (15+) com esse efeito ativarão uma magia ou efeito com essa fraqueza, por até 3x no combate. Inimigos sem fraqueza sangram por 3 rodadas 50% do dano causado.
@@ -360,7 +364,7 @@ Estar em posição de artilharia ou estar atacando aglomerações lhe concede +3
 <div class='note'>
 
 <span class='note-sup'>Conjuração I</span>
-<span class='note-title'>"A 73ª Edição da Moda Arcana"</span><br />
+<span class='note-title'>"O 73º Encontro da Moda Arcana"</span><br />
 <span class='note-sub'>Reatividade imbutiva</span>
 
 Ao causar dano forte (15+) no inimigo com magias ou com sua arma, encanta automaticamente a sua arma por 3 turnos (ou punhos se não houver uma). Danos críticos (20) encantam você e a arma por 6 turnos, além de receber +3 em ataque por esse período.
@@ -396,7 +400,7 @@ Ao eliminar inimigos com uma magia (max. 3) faz com que eles virem um espelho da
 <div class='note'>
 
 <span class='note-sup'>Utilidade I</span>
-<span class='note-title'>"Azulzinho para Magos"</span><br />
+<span class='note-title'>"Xarope de Cianeto para Magos"</span><br />
 <span class='note-sub'>Auxílio mágico a aliados</span>
 
 **(Ativa, 3x por Combate)** quando um aliado for usar uma magia, você pode ativar. Ativar essa habilidade adiciona um d20 seu a magia do aliado, além de dar um +3 de bônus a ele. Causar crítico (de ambas as partes) multiplica o dano para metade da vida máxima do inimigo (25% em chefes).  
@@ -431,7 +435,7 @@ Sempre que um aliado próximo sofrer um dano considerável (10+) por magias voc�
 <!-- ---------------------------- -->
 <div class='note'>
 
-<span class='note-sup'>Conjurador II</span>
+<span class='note-sup'>Conjuração II</span>
 <span class='note-title'>"Armadilhazinhas Mágicas"</span><br />
 <span class='note-sub'>Dispositivos explosivos arcanos</span>
 
@@ -447,7 +451,7 @@ Sempre que um aliado próximo sofrer um dano considerável (10+) por magias voc�
 <span class='note-title'>"Multifacetado"</span><br />
 <span class='note-sub'>Combate simultâneo</span>
 
-Recebe a habilidade de lutar contra 3 inimigos ao mesmo tempo. Seus ataques contra os três contarão como apenas um, isto é, você só precisa de um dado para danificar todos. Derrotar o grupo de inimigos irá lhe conceder um bônus de +5 de dano pelo por 3 rodadas.
+Recebe a habilidade de lutar contra 3 inimigos comuns (não conta em chefes ou inimigos grandes) ao mesmo tempo. Seus ataques contra os três contarão como apenas um, isto é, você só precisa de um dado para danificar todos. Derrotar o grupo irá lhe conceder um bônus de +5 de dano pelo por 3 rodadas.
 
 </div>
 <!-- ---------------------------- -->
@@ -459,7 +463,7 @@ Recebe a habilidade de lutar contra 3 inimigos ao mesmo tempo. Seus ataques cont
 <span class='note-title'>"Vampirismo Arcano Calaveriano"</span><br />
 <span class='note-sub'>Inibição de magias</span>
 
-**(Ativa, 2x por Batalha)** ao estar contra um alvo isolado, pode ativar o ‘Vampirismo Mágico’, isto é, consegue sugar o potencial mágico do inimigo e usar contra ele, enfraquecendo o dano que ele causa a você em -3 e fortificando em +3 o dano que você causa nele. A cada rodada este bônus se multiplica (até +9/-9).
+**(Ativa, 2x por Batalha)** ao estar contra um alvo isolado, pode ativar o ‘Vampirismo Mágico’, isto é, consegue sugar o potencial mágico do inimigo e usar contra ele, enfraquecendo o dano que ele causa a você em -3 e fortificando em +3 o dano que você causa nele. A cada rodada    bônus se multiplica (até +9/-9).
 
 </div>
 <!-- ---------------------------- -->
@@ -471,7 +475,9 @@ Recebe a habilidade de lutar contra 3 inimigos ao mesmo tempo. Seus ataques cont
 <span class='note-title'>"Empréstimo de Brinquedos"</span><br />
 <span class='note-sub'>Compartilhamento de golpes</span>
 
-**(Ativa, 3x por Combate)** ao ativar essa habilidade você pode “dar” a sua magia ao aliado para que ele use contra o inimigo. Quem irá soltar o d20 de dano será ele, mas ele recebe +2 ao atacar ela.
+**(Ativa, 3x por Combate)** ao ativar essa habilidade você cede seu turno para “dar” o seu ataque de magia ao aliado para que ele use contra o inimigo. Quem irá soltar o d20 de dano será ele, mas ele recebe +2 ao atacar ela.
+
+*Dica: esse talento é bem útil para encurtar estratégicamente a distância de conjuração da magia.*
 
 </div>
 <!-- ---------------------------- -->
@@ -580,7 +586,7 @@ Todos os acertos fortes (15+) que você causar lhe concedem um aumento de ataque
 <!-- ---------------------------- -->
 <div class='note'>
 
-<span class='note-sup'>Conjurador II</span>
+<span class='note-sup'>Conjuração II</span>
 <span class='note-title'>"Infantaria Implacável Eriziana"</span><br />
 <span class='note-sub'>Resistência e/ou aprendizado</span>
 
@@ -657,7 +663,7 @@ Passivamente ao causar dano forte (15+) a um alvo, faz com que ele sangre 15 de 
 <!-- ---------------------------- -->
 <div class='note'>
 
-<span class='note-sup'>Conjurador I</span>
+<span class='note-sup'>Conjuração I</span>
 <span class='note-title'>"Reverso Mortífero"</span><br />
 <span class='note-sub'>Reflexão de dano</span>
 
@@ -769,7 +775,7 @@ Inimigos isolados, com nenhum aliado nas imediações, sofrem o dano causado por
 <span class='note-title'>"Estraga Festas"</span><br />
 <span class='note-sub'>Inibir cura inimiga</span>
 
-**(Ativa, 3x por Combate)** Curas e escudos doe inimigos se tornam COMPLETAMENTE nulos, reduzindo ambos a zero. Este efeito durará por três rodadas, independentemente do tipo de inimigo. 
+**(Ativa, 3x por Combate)** Curas e escudos dos inimigos se tornam COMPLETAMENTE nulos, reduzindo ambos a zero. Este efeito durará por três rodadas, independentemente do tipo de inimigo. 
 
 </div>
 <!-- ---------------------------- -->
@@ -778,5 +784,87 @@ Inimigos isolados, com nenhum aliado nas imediações, sofrem o dano causado por
 <h2>Generalista</h2>
 <hr class='solid'>
 </div>
+
+<!-- ---------------------------- -->
+<div class='note'>
+
+<span class='note-sup'>I</span>
+<span class='note-title'>"Castigo Setealênico"</span><br />
+<span class='note-sub'>Cegar o adversário</span>
+
+**(Ativa, 1 vez por inimigo)** Ao ativar, amaldiçoa o inimigo (exceto para chefes) com cegueira por 3 turnos completos. A cada ataque, ele rolará um d20 extra. Caso 16 ou acima ele poderá acertar o golpe, e caso contrário ele errará. *Ao encerrar a maldição, o talento entra em recarga por 3 rodadas. A ativa não consome turno.*
+
+</div>
+<!-- ---------------------------- -->
+
+<!-- ---------------------------- -->
+<div class='note'>
+
+<span class='note-sup'>II</span>
+<span class='note-title'>"O Despertar do Espírito Guerreiro"</span><br />
+<span class='note-sub'>Chance de recuperação</span>
+
+Ao chegar perto de morrer (5% da vida) você desmaia e ressurge fora do corpo como um fantasma de si mesmo por 3 rodadas. Nesse meio tempo **você não pode ser atingido por nada**, e recebe um bônus de +5 no D20 de Ataque. Eliminar um inimigo nesse meio tempo faz com que você acorde imediatamente com 70% da vida. Caso não elimine ninguém seu fantasma evapora e você retorna a seu corpo desmaiado, além de ficar inabilitado até o fim do combate (ou até alguém te acordar forçadamente).
+
+</div>
+<!-- ---------------------------- -->
+
+<!-- ---------------------------- -->
+<div class='note'>
+
+<span class='note-sup'>III</span>
+<span class='note-title'>"O Colecionador Nikolariano"</span><br />
+<span class='note-sub'>Combate aleatorizado</span>
+
+**(Ativa)** Ativando, você rola um d5. Você ganhará os **modificadores daquela classe** por 1 ativação apenas (em caso de mais de um conta o primeiro que usar). *Após isto o talento entrará em recarga por 3 rodadas.*
+
+*1 a 5: **(Destruidor > Colosso > Conjurador > Guerreiro > Assassino)***
+
+</div>
+<!-- ---------------------------- -->
+
+<!-- ---------------------------- -->
+<div class='note'>
+
+<span class='note-sup'>IV</span>
+<span class='note-title'>"O Rei das Planícies do Nada"</span><br />
+<span class='note-sub'>Reposicionamento Estratégico em Combate</span>
+
+**(Ativa, 4 Cargas)** Ao ativar, você pode ressurgir em qualquer região próxima de você, por exemplo: de frente ao inimigo para atrás do inimigo (não funciona como um teletransporte). Sempre que causar dano acima de 18 (sem contar modificadores) você ganha uma nova carga. 
+
+*Lembrando que essa ativação não consome o turno!*
+
+</div>
+<!-- ---------------------------- -->
+
+<!-- ---------------------------- -->
+<div class='note'>
+
+<span class='note-sup'>V</span>
+<span class='note-title'>"Antiga União Cano-lupina"</span><br />
+<span class='note-sub'>Amizade em combate</span>
+
+Ao lutar em dupla com um aliado contra inimigos em comum (sem limite de distância) você pode cobrir o ataque dele caso ele não tire bons dados, e ele também poderá cobrur o seu.
+
+*Obs.: o talento desativa caso você e/ou seu aliado foquem em inimigos diferentes.*
+
+</div>
+<!-- ---------------------------- -->
+
+<!-- ---------------------------- -->
+<div class='note'>
+
+<span class='note-sup'>VI</span>
+<span class='note-title'>"Sinos da Morte de Jorkeforgde"</span><br />
+<span class='note-sub'>Finalização fatal</span>
+
+**(Ativa, 1x por Batalha)** Ao inimigo chegar a ponto de ser finalizado, você poderá ativar o talento. Entãom, aambos rolarão um dado (D20). 
+
+Caso seu dado seja maior ao do inimigo ou empatem, ele cairá em uma ilusão mortal. Quando isso acontece, ele atacará o inimigo mais próximo com +5 no d20, e caso não haja inimigos ele dirá todos e quaisquer perigos ou segredos no local, e em seguida a cabeça dele explodirá.
+
+Porém, caso o inimigo ganhe na disputa, ele se curará do dano do último ataque e a batalha continuará!
+
+</div>
+<!-- ---------------------------- -->
 
 <div class='end'>

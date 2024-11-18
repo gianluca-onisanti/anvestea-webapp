@@ -3,7 +3,7 @@
   <h4>Índice:</h4>
   <ul>
     <li><a class='super' href="#0.">
-      <span class='bold'>0.</span>Introdução
+      <span class='bold'></span>Por que as classes?
     </a></li>
     <li><a class='super' href="#1.">
       <span class='bold'>1.</span>Destruidor
@@ -33,7 +33,13 @@
 <hr class='solid'>
 </div>
 
-As classes ...
+O Sistema de Classes exerce um papel fundamental em definir **o que um objetivo que seu personagem deseja alcançãr em meio a um combate.** Classes mais cadenciadas que tem por objetivo de absorver o dano de ataques deve funcionar de forma completamente distinta em comparação a classes mais rápidas que querem causam dano, e por isso existem os **Modificadores de Turno**, que permitem que realmente essas classes joguem de formas distintas.
+
+Todavia, [os talentos]() podem abstrair bastante como essas classes funcionam, pois **elas adicionam habilidades especiais aos personagens**, entregando uma maior profundidade maior em jogo. *Por exemplo: dois destruidores podem fazer coisas diferentes, mesmo sendo semelhantes em seu objetivo. Um deles pode querer causar AINDA mais dano, enquanto o outro pode querer beneficiar mais seus aliados em campo enquanto ataca, ou até se defender mais de ameaças, já que ele é mais frágil.*
+
+Resumidamente, as classes **ditam como você vai jogar**, enquanto os talentos **fortalecem o seu modo de jogo ou abrangem mais ele!**
+
+Bem, chega de papo e dê uma olhada no que temos abaixo.
 
 <div id='1.' class='item'>
 <h3>Destruidor</h3>
@@ -87,7 +93,7 @@ A primeira vista, a classe de Conjurador parece representar apenas magos, bruxos
 
 Os conjuradores funcionam de maneira similar aos destruidores, porém não apresentam tanto dano quanto os mesmos. Aliás, o foco deles não é causar extremo dano, porém adicionar camadas de abstração no dano causado, gerando malefícios a inimigos e benefícios ao time como um todo.
 
-Caso alguma conjuração ou imbuição mágica falhe, **você não perderá seu turno e poderá fazer outra ação, porém não poderá realizar a mesma em que falhou até o próximo turno.** [Neste tópico aqui falamos bem certinho sobre turnos e ações](?markdown=0)
+Caso alguma conjuração ou imbuição mágica falhe, **você não perderá seu turno e poderá fazer outra ação, porém não poderá realizar a mesma em que falhou até o próximo turno.** [Neste tópico aqui falamos bem certinho sobre turnos e ações](?markdown=2)
 
 O modificador de turno dos conjuradores é o **'D100 de Efeito'**. Ele não causa mais dano exatamente, mas um dado que cria condições adversas a todos em campo de acordo com a mágia/golpe que você realizar durante esse período.
 
@@ -97,29 +103,29 @@ O modificador de turno dos conjuradores é o **'D100 de Efeito'**. Ele não caus
 
 Quase como um dado de sorte, ao causar dano relacionado a magia com um 16 ou mais em um D20 de Ataque (sem modificadores) este modificador pode ser OPCIONALMENTE ativado.
 
-Ao rolar esse D20, irá separar ele em 4 categorias de escala de acordo com o que você tirar nele (lembrando que quanto maior o dado na escola maior será a adversidade). A adversidade levará em conta as consequências e fantasias de sua magia.
+Ao rolar esse D20, irá separar ele em 4 categorias de escala de acordo com o que você tirar nele (lembrando que quanto maior o dado na escala maior será a adversidade). A adversidade levará em conta as consequências e fantasias de sua magia.
 
 *Obs.: levaremos em conta nos exemplos três golpes mágicos, respectivamente: tremores de terra, ventos e bola de fogo.*
 
-#### Categoria I: Brando (39 ou menos no D20):
+#### Categoria I: Brando (39 ou menos no D100):
 
 Nesse estágio, os efeitos em campo são irrisórios e leves, não causando grandes transtornos a quem estiver em campo de batalha e não alterando o combate de forma direta.
 
 *Ex.: Pequenos buracos na calçada da praça, leve desequilíbrio pelo vento, pequenas labaredas no gramado.*
 
-#### Categoria II: Moderado (40 até 59 no D20):
+#### Categoria II: Moderado (40 até 59 no D100):
 
 Aqui os efeitos já começam a ser notados, e algumas condicionais já podem preocupar a todos em campo, ou seja, tirar dados ruins aqui já podem lhe causar algum dano.
 
 *Ex.: Buracos medianos e fundos na calçada da praça, objetos voadores em alta velocidade chocando nas pessoas, fogo contínuo e alastrado no gramado.*
 
-#### Categoria III: Grave (60 até 84 no D20):
+#### Categoria III: Grave (60 até 84 no D100):
 
 Já se tornam bem mais perigosos os efeitos e a forma de batalha terá de ser totalmente adaptada com base nas adversidades do terreno. Agora um campo de batalha é um inimigo real a todos. Daqui em diante medidas para conter e eliminar algumas adversidades podem se fazer necessárias.
 
 *Ex.: rachaduras largas no solo e terrenos irregulares e pontiagudos, perda de controle e grandes objetos lançados a mais de 100km por hora, fogo forte e queimadas grandes no local.*
 
-#### Categoria IV: Catasclísmico (85 ou mais no D20):
+#### Categoria IV: Catasclísmico (85 ou mais no D100):
 
 Um verdadeiro desastre. Se torna difícil para o inimigo e sua equipe lidar com a situação de forma calma. O campo se tornará o inimigo mais perigoso e poderá facilmente levar todos a morte iminente. Usar esta condição para derrotar seu inimigo pode ser seu maior trunfo ou sua maior maldição.
 
@@ -193,18 +199,24 @@ Em inimigos comuns, tirar um D20 de Ataque de valor 18 ou mais após o **D20 de 
 
 A primeiro momento, esta classe parece não fazer nada em comparação as outras. E de certa forma ela realmente não faz! 
 
-Os generalistas são focados unicamente em combate via talentos. É basicamente escolher e fazer do seu jeito, e isso sem ter nenhum modificador de dado!
+Os generalistas são focados unicamente em combate via talento, então eles podem **escolher três**. É basicamente escolher e fazer do seu jeito, e isso sem ter nenhum modificador de dado! Verifique a regra abaixo.
 
+<div class='center'>
 <div class='note'>
 
 ### Como escolher:
 
-> 1x Talento de Classe de **qualquer foco, de qualquer classe do jogo**
+> **1x** Talento de Classe com **qualquer foco, de qualquer classe.**
 
-> 1x Talento de Classe com foco em **Utilidade**, de **qualquer classe MENOS a escolhida acima**.
+&
 
-> 1x Talento de **Utilidade de Generalista**
+> **1x** Talento de Classe com **foco de Utilidade, de qualquer classe.**
 
+&
+
+> **1x** Talento de Classe de **Generalista.**
+
+</div>
 </div>
 
 <div class='end'>
