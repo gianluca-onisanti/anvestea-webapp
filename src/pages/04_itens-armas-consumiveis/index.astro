@@ -1,0 +1,51 @@
+---
+/// INDEX DE DESENVOLVEDOR
+import Layout from "../../layouts/Layout.astro";
+import SideMenu from "../../components/SideMenu.astro";
+
+const pageTitle = "Itens";
+---
+
+<script>
+    import markdownReader from "../../components/markdownReader";
+
+    markdownReader([
+        "./01_itens-consumiveis",
+        "./02_itens-utilitarios",
+        "./03_tipos-de-armamentos",
+        "./04_forjando-armamentos-e-pocoes", 
+    ]);
+</script>
+
+<Layout id="titulo" title={pageTitle}>
+    <SideMenu
+        links={[
+            {
+                href: "../",
+                icon: null,
+                label: `Início / ${pageTitle}`,
+            },
+            {
+                href: "./?markdown=0",
+                icon: "grocery",
+                label: "Itens Consumíveis",
+            },
+            {
+                href: "./?markdown=1",
+                icon: "build",
+                label: "Itens Utilitários",
+            },
+            {
+                href: "./?markdown=2",
+                icon: "sword_rose",
+                label: "Tipos de Armamentos",
+            },
+            {
+                href: "./?markdown=3",
+                icon: "fireplace",
+                label: "Forjando Armamentos e Poções",
+            },
+        ]}
+    />
+    <main style="max-width: 750px;"></main>
+</Layout>

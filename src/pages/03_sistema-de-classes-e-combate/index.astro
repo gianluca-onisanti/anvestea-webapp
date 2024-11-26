@@ -1,0 +1,57 @@
+---
+/// INDEX DE DESENVOLVEDOR
+import Layout from "../../layouts/Layout.astro";
+import SideMenu from "../../components/SideMenu.astro";
+
+const pageTitle = "Sistema de Classes & Turnos";
+---
+
+<script>
+    import markdownReader from "../../components/markdownReader";
+
+    markdownReader([
+        "./01_classes",
+        "./02_catalogo-de-talentos",
+        "./03_subclasse-e-evolucoes",
+        "./04_turnos-e-acoes",
+        "./05_saques-e-drops-de-itens",
+    ]);
+</script>
+
+<Layout id="titulo" title={pageTitle}>
+    <SideMenu
+        links={[
+            {
+                href: "../",
+                icon: null,
+                label: `Início / ${pageTitle}`,
+            },
+            {
+                href: "./?markdown=0",
+                icon: "school",
+                label: "Classes",
+            },
+            {
+                href: "./?markdown=1",
+                icon: "receipt_long",
+                label: "Catálogo de Talentos",
+            },
+            {
+                href: "./?markdown=2",
+                icon: "rocket",
+                label: "Subclasse & Evoluções",
+            },
+            {
+                href: "./?markdown=3",
+                icon: "gavel",
+                label: "Turnos & Ações em Combate",
+            },
+            {
+                href: "./?markdown=4",
+                icon: "star_half",
+                label: "Saques/Drops de Itens",
+            },
+        ]}
+    />
+    <main style="max-width: 750px;"></main>
+</Layout>

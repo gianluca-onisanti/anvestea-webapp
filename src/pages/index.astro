@@ -6,6 +6,15 @@ import SideMenu from "../components/SideMenu.astro";
 const pageTitle = "Início";
 ---
 
+<script>
+    import markdownReader from "../components/markdownReader";
+ 
+    markdownReader([
+        "./aba_novidades",
+        "./aba_exploracao-de-mundo",
+    ]);
+</script>
+
 <Layout id="titulo" title={pageTitle}>
     <SideMenu
         links={[
@@ -20,9 +29,24 @@ const pageTitle = "Início";
                 label: "Histórias",
             },
             {
-                href: "./02_combate-classes-e-talentos/",
+                href: "./?markdown=1",
+                icon: "planet",
+                label: "Exploração de Mundo",
+            },
+            {
+                href: "./02_criacao-de-personagem/",
+                icon: "badge",
+                label: "Criação de Personagem",
+            },
+            {
+                href: "./03_sistema-de-classes-e-combate/",
                 icon: "school",
-                label: "Classes e Talentos",
+                label: "Sistema de Classes & Combate",
+            },
+            {
+                href: "./04_itens-armas-consumiveis/",
+                icon: "science",
+                label: "Itens, Armas, Consumíveis",
             },
         ]}
     />

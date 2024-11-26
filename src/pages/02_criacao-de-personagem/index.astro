@@ -3,18 +3,18 @@
 import Layout from "../../layouts/Layout.astro";
 import SideMenu from "../../components/SideMenu.astro";
 
-const pageTitle = "Combate, Classes...";
+const pageTitle = "Criação de Personagem";
 ---
 
 <script>
     import markdownReader from "../../components/markdownReader";
 
     markdownReader([
-        "./01_classes",
-        "./02_catalogo-de-talentos",
-        "./03_turnos-e-acoes",
-        "./04_saques-e-drops-de-itens",
-        "./05_subclasse-e-evolucoes",
+        "./01_racas-e-vocacoes",
+        "./02_empunhadura-de-armas",
+        "./03_escolha-de-magias",
+        "./04_atributos",
+        "./05_escolha-de-classe"
     ]);
 </script>
 
@@ -28,28 +28,28 @@ const pageTitle = "Combate, Classes...";
             },
             {
                 href: "./?markdown=0",
-                icon: "school",
-                label: "Classes",
+                icon: "diversity_2",
+                label: "Raças & Vocações",
             },
             {
                 href: "./?markdown=1",
-                icon: "receipt_long",
-                label: "Catálogo de Talentos",
+                icon: "waving_hand",
+                label: "Empunhadura de Armas",
             },
             {
                 href: "./?markdown=2",
-                icon: "gavel",
-                label: "Turnos & Ações",
+                icon: "kid_star",
+                label: "Escolha de Magias",
             },
             {
                 href: "./?markdown=3",
-                icon: "star_half",
-                label: "Saques/Drops de Itens",
+                icon: "bar_chart_4_bars",
+                label: "Atributos",
             },
             {
                 href: "./?markdown=4",
-                icon: "rocket",
-                label: "Subclasse & Evoluções",
+                icon: "signpost",
+                label: "Escolha de Classe",
             },
         ]}
     />
