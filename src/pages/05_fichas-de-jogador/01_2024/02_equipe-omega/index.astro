@@ -1,0 +1,69 @@
+---
+/// INDEX DE DESENVOLVEDOR
+import Layout from "../../../../layouts/Layout.astro";
+import SideMenu from "../../../../components/SideMenu.astro";
+
+const pageTitle = "Equipe Omega";
+---
+
+<script>
+    import markdownReader from "../../../../components/markdownReader";
+ 
+    markdownReader([
+        "./01_arthur-fordragon",
+        "./02_atsue-mona",
+        "./03_draigark",
+        "./04_edelgard-crane",
+        "./05_kellan-de-caglliari",
+        "./06_hugo-truc",
+        "./07_jonny-kong",
+    ]);
+</script>
+
+<Layout id="titulo" title={pageTitle}>
+    <SideMenu
+        links={[
+            {
+                href: "../",
+                icon: null,
+                label: `Campanhas 2024 / ${pageTitle}`,
+            },
+            {
+                href: "./?markdown=0",
+                icon: "style",
+                label: "Arthur Fordragon",
+            },
+            {
+                href: "./?markdown=1",
+                icon: "change_circle",
+                label: "Atsue Mona",
+            },
+            {
+                href: "./?markdown=2",
+                icon: "kid_star",
+                label: "Draigark",
+            },
+            {
+                href: "./?markdown=3",
+                icon: "ac_unit",
+                label: "Edelgard Crane",
+            },
+            {
+                href: "./?markdown=4",
+                icon: "forest",
+                label: "Kellan de Caglliari",
+            },
+            {
+                href: "./?markdown=5",
+                icon: "style",
+                label: "Hugo Truc",
+            },
+            {
+                href: "./?markdown=6",
+                icon: "landscape",
+                label: "Jonny Kong",
+            },
+        ]}
+    />
+    <main style="max-width: 750px;"></main>
+</Layout>

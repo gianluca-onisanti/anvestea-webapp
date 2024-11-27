@@ -2,7 +2,7 @@
 // Sidemenu.astro
 import Icon from "./Icon.astro";
 
-const { links = [], raw = false } = Astro.props;
+const { links = [], raw = false} = Astro.props;
 ---
 
 <div 
@@ -52,7 +52,9 @@ const { links = [], raw = false } = Astro.props;
                             <a
                                 class={!link.icon ? "pager" : null}
                                 id={String(e)}
-                                href={link.href}
+                                href={link.disabled ? '#' : link.href}
+                                aria-disabled={link.disabled ? 'true' : 'false'}
+                                style={link.disabled ? 'pointer-events: none; opacity: 0.5;' : ''}
                             >
                                 <Icon
                                     name={link.icon ? link.icon : "arrow_left"}

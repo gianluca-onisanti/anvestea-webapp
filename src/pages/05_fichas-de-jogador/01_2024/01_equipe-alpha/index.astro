@@ -1,0 +1,57 @@
+---
+/// INDEX DE DESENVOLVEDOR
+import Layout from "../../../../layouts/Layout.astro";
+import SideMenu from "../../../../components/SideMenu.astro";
+
+const pageTitle = "Equipe Alpha";
+---
+
+<script>
+    import markdownReader from "../../../../components/markdownReader";
+ 
+    markdownReader([
+        "./01_hugo-truc",
+        "./02_jorge",
+        "./03_jonny-kong",
+        "./04_xi-jinpin",
+        "./05_faelinn-thessalia",
+    ]);
+</script>
+
+<Layout id="titulo" title={pageTitle}>
+    <SideMenu
+        links={[
+            {
+                href: "../",
+                icon: null,
+                label: `Campanhas 2024 / ${pageTitle}`,
+            },
+            {
+                href: "./?markdown=0",
+                icon: "style",
+                label: "Hugo Truc",
+            },
+            {
+                href: "./?markdown=1",
+                icon: "hardware",
+                label: "Jorge",
+            },
+            {
+                href: "./?markdown=2",
+                icon: "landscape",
+                label: "Jonny Kong",
+            },
+            {
+                href: "./?markdown=3",
+                icon: "temple_buddhist",
+                label: "Xi Jinpin",
+            },
+            {
+                href: "./?markdown=4",
+                icon: "water_drop",
+                label: "Faelinn Thessalia",
+            },
+        ]}
+    />
+    <main style="max-width: 750px;"></main>
+</Layout>

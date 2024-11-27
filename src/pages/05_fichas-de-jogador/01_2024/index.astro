@@ -1,0 +1,30 @@
+---
+/// INDEX DE DESENVOLVEDOR
+import Layout from "../../../layouts/Layout.astro";
+import SideMenu from "../../../components/SideMenu.astro";
+
+const pageTitle = "Campanhas 2024";
+---
+
+<Layout id="titulo" title={pageTitle}>
+    <SideMenu
+        links={[
+            {
+                href: "../",
+                icon: null,
+                label: `Início / ${pageTitle}`,
+            },
+            {
+                href: "./01_equipe-alpha/",
+                icon: "check",
+                label: "Equipe Alpha",
+            },
+            {
+                href: "./02_equipe-omega/",
+                icon: "progress_activity",
+                label: "Equipe Omega",
+            }
+        ]}
+    />
+    <main style="max-width: 750px;"></main>
+</Layout>

@@ -33,7 +33,7 @@
 <hr class='solid'>
 </div>
 
-O Sistema de Classes exerce um papel fundamental em definir **o que um objetivo que seu personagem deseja alcançãr em meio a um combate.** Classes mais cadenciadas que tem por objetivo de absorver o dano de ataques deve funcionar de forma completamente distinta em comparação a classes mais rápidas que querem causam dano, e por isso existem os **Modificadores de Turno**, que permitem que realmente essas classes joguem de formas distintas.
+O Sistema de Classes exerce um papel fundamental em definir **o que um objetivo que seu personagem deseja alcançar em meio a um combate.** Classes mais cadenciadas que tem por objetivo de absorver o dano de ataques deve funcionar de forma completamente distinta em comparação a classes mais rápidas que querem causam dano, e por isso existem os **Modificadores de Turno**, que permitem que realmente essas classes joguem de formas distintas.
 
 Todavia, [os talentos]() podem abstrair bastante como essas classes funcionam, pois **elas adicionam habilidades especiais aos personagens**, entregando uma maior profundidade maior em jogo. *Por exemplo: dois destruidores podem fazer coisas diferentes, mesmo sendo semelhantes em seu objetivo. Um deles pode querer causar AINDA mais dano, enquanto o outro pode querer beneficiar mais seus aliados em campo enquanto ataca, ou até se defender mais de ameaças, já que ele é mais frágil.*
 

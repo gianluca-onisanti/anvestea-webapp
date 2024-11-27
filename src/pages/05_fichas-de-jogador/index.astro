@@ -1,0 +1,39 @@
+---
+/// INDEX DE DESENVOLVEDOR
+import Layout from "../../layouts/Layout.astro";
+import SideMenu from "../../components/SideMenu.astro";
+
+const pageTitle = "Fichas de Jogador";
+---
+
+</script>
+
+<Layout id="titulo" title={pageTitle}>
+    <SideMenu
+        links={[
+            {
+                href: "../",
+                icon: null,
+                label: `Início / ${pageTitle}`,
+            },
+            {
+                href: "./01_2024/",
+                icon: "progress_activity",
+                label: "Campanhas 2024 (Beta)",
+            },
+            {
+                href: "./02_2025/",
+                icon: "check_indeterminate_small",
+                label: "Campanhas 2025",
+                disabled: true
+            },
+            {
+                href: "./03_2026/",
+                icon: "check_indeterminate_small",
+                label: "Campanhas 2026",
+                disabled: true
+            },
+        ]}
+    />
+    <main style="max-width: 750px;"></main>
+</Layout>
