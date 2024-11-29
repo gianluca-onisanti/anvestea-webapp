@@ -18,12 +18,19 @@
   </div>
 </nav>
 
-<div id='0.' class='title'>
+<div class='title'>
 <h2>Kellan de Caglliari</h2>
 <hr class='solid'>
 </div>
 
-AQUI UMA FOTO!
+<div id='0.' class='image-container'>
+  <img
+    class='image'
+    src="/images/kellan.png" 
+    alt="Kellan de Caglliari" 
+    style="width:360px; height:360px; object-fit: cover; border-radius: 50%;"
+  />
+</div>
 
 <div id='1.' class='item'>
 <h3>Características Básicas</h3>
@@ -31,11 +38,11 @@ AQUI UMA FOTO!
  
 - **Sexo/Gênero:** Masculino
 - **Idade:** 25 anos
-- **Altura:** 2.10m
+- **Altura:** 2,10m
 - **Peso:** 103kg
 - **Raça:** Fauno
 - **Ocupação:** Explorador/Biólogo
-- **Terra Natal:** Vila Caglliari do Norte - Reino dos Norkins
+- **Terra Natal:** *Vila Caglliari do Norte - Reino dos Norkins*
 
 <div id='2.' class='item'>
 <h3>Combate</h3>
